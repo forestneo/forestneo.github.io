@@ -3,7 +3,7 @@ layout: post
 title: "Langchain-LCEL用法介绍"
 author: ForestNeo
 categories: Blog
-tags: Langchain
+tags: LangChain
 ---
 
 # LCEL 初探
