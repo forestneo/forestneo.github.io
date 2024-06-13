@@ -114,7 +114,7 @@ if __name__ == "__main__":
 
 ## 方式3二：使用Tool
 
-```
+```python
 from langchain_core.messages import HumanMessage, ToolMessage
 from langchain_core.tools import tool
 from langchain.schema import HumanMessage
