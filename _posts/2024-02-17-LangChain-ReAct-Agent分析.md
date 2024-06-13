@@ -3,7 +3,9 @@ layout: post
 title: "LangChain React Agent分析"
 author: ForestNeo
 categories: Blog
-tags: LangChain
+tags: 
+  - LangChain
+  - Agent
 ---
 
 LangChain 是一个开源库，它旨在使构建和部署与语言模型交互的应用程序变得更加容易。它的核心概念之一是 "Agent"，可以认为 Agent 是一个抽象层，代表了一个可以执行各种任务的实体。
