@@ -41,10 +41,10 @@
     <loc>http://localhost:1313/posts/chinese-preview/</loc>
     <lastmod>2024-02-17T14:26:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/diary/</loc>
+    <loc>http://localhost:1313/memories/</loc>
     <lastmod>2017-06-12T14:26:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/diary/chinese-preview/</loc>
+    <loc>http://localhost:1313/memories/chinese-preview/</loc>
     <lastmod>2017-06-12T14:26:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%E9%9A%8F%E4%BE%BF%E5%86%99%E5%86%99/</loc>

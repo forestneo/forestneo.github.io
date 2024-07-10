@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>随便写写 on 木木杂记</title>
-    <link>http://localhost:1313/tags/%E9%9A%8F%E4%BE%BF%E5%86%99%E5%86%99/</link>
-    <description>Recent content in 随便写写 on 木木杂记</description>
+    <title>Memories on 木木杂记</title>
+    <link>http://localhost:1313/memories/</link>
+    <description>Recent content in Memories on 木木杂记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 12 Jun 2017 14:26:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E9%9A%8F%E4%BE%BF%E5%86%99%E5%86%99/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/memories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>为什么鸡腿掉地上会让人很生气</title>
       <link>http://localhost:1313/memories/chinese-preview/</link>
