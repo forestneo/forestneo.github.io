@@ -1,47 +1,68 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>木木杂记</title>
+    <link>http://localhost:64910/</link>
+    <description>Recent content on 木木杂记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Apr 2019 14:26:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Jul 2024 20:24:28 +0800</lastBuildDate>
+    <atom:link href="http://localhost:64910/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>药师灌顶真言</title>
-      <link>http://localhost:1313/posts/chinese-preview/</link>
-      <pubDate>Thu, 11 Apr 2019 14:26:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/chinese-preview/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;修学药师灌顶真言是药师法门的一部分，读诵修持有着极大的功德利益&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h1 id=&#34;内容&#34;&gt;内容&lt;/h1&gt;&#xA;&lt;p&gt;南无薄伽伐帝鞞杀社&lt;/p&gt;&#xA;&lt;p&gt;窭噜薜琉璃&lt;/p&gt;&#xA;&lt;p&gt;跋喇婆&lt;/p&gt;&#xA;&lt;p&gt;喝啰阇也&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>日本語敬語体系</title>
-      <link>http://localhost:1313/posts/japanese-preview/</link>
-      <pubDate>Wed, 10 Apr 2019 14:26:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/japanese-preview/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;日本語の敬語体系は、一般に、大きく尊敬語・謙譲語・丁寧語に分類される。文化審議会国語分科会は、2007年2月に「敬語の指針」を答申し、これに丁重語および美化語を含めた5分類を示している。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h1 id=&#34;尊敬語&#34;&gt;尊敬語&lt;/h1&gt;&#xA;&lt;p&gt;尊敬語は、動作の主体を高めることで、主体への敬意を表す言い方である。動詞に「お（ご）～になる」を付けた形、また、助動詞「（ら）れる」を付けた形などが用いられる。たとえば、動詞「取る」の尊敬形として、「（先生が）お取りになる」「（先生が）取られる」などが用いられる。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Creating a New Theme</title>
-      <link>http://localhost:1313/posts/english-preview/</link>
-      <pubDate>Mon, 01 Apr 2019 14:26:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/english-preview/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Theme Preview</title>
-      <link>http://localhost:1313/posts/theme-preview/</link>
-      <pubDate>Sun, 31 Mar 2019 17:49:40 +0800</pubDate>
-      <guid>http://localhost:1313/posts/theme-preview/</guid>
-      <description>&lt;h1 id=&#34;headings&#34;&gt;Headings&lt;/h1&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gh&#34;&gt;# H1&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gh&#34;&gt;&lt;/span&gt;&lt;span class=&#34;gu&#34;&gt;## H2&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;### H3&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;#### H4&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;##### H5&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;###### H6&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <title>关于</title>
+      <link>http://localhost:64910/about/</link>
+      <pubDate>Wed, 10 Jul 2024 20:24:28 +0800</pubDate>
+      <guid>http://localhost:64910/about/</guid>
+      <description>这是小木木的博客</description>
     </item>
     <item>
       <title>关于</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Sat, 29 Dec 2018 20:24:28 +0800</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>Hugo 官方主页: https://gohugo.io/ Hugo的安装方式有两种，一种是直接下载编译好的Hugo二进制文件。如果只是使用Hugo推荐用这种方式。另一种方式是获取Hugo的源码，自己编译。由于各种不可预料的网络问题，第二种方式不</description>
+      <link>http://localhost:64910/diary/</link>
+      <pubDate>Wed, 10 Jul 2024 20:24:28 +0800</pubDate>
+      <guid>http://localhost:64910/diary/</guid>
+      <description>这是小木木的博客</description>
+    </item>
+    <item>
+      <title>LLM/RAG如何进行意图识别（路由）</title>
+      <link>http://localhost:64910/posts/chinese-preview/</link>
+      <pubDate>Fri, 14 Jun 2024 14:26:00 +0800</pubDate>
+      <guid>http://localhost:64910/posts/chinese-preview/</guid>
+      <description>为什么需要进行意图识别 RAG 的召回、生成过程逻辑是不够灵活的，无法解决用户的所有问题。在实际过程中，RAG 更适合作为一个子流程。即业务中往往需要首先识别用户 query 中的意图，再进入不同的分支流程进行响应（如图：</description>
+    </item>
+    <item>
+      <title>LangChain使用函数调用（Function Call）</title>
+      <link>http://localhost:64910/posts/chinese-preview/</link>
+      <pubDate>Thu, 13 Jun 2024 14:26:00 +0800</pubDate>
+      <guid>http://localhost:64910/posts/chinese-preview/</guid>
+      <description>什么是函数调用 顾名思义，就是使得我们的代码流程能调用函数。在某些地方，函数也作为工具，因此也称工具调用（Tool Calling）。函数调用中，LLM的难点在于根据用户query去选择哪个函数，以及对应</description>
+    </item>
+    <item>
+      <title>Advanced RAG 07</title>
+      <link>http://localhost:64910/posts/chinese-preview/</link>
+      <pubDate>Thu, 16 May 2024 14:26:00 +0800</pubDate>
+      <guid>http://localhost:64910/posts/chinese-preview/</guid>
+      <description>有效解析和理解非结构化文档中的表格时，设计 RAG 方案仍然是一大挑战。以图片格式存在的表格情况下，这更困难，如扫描文件中的表格。这些挑战至少包含一下几个方面： 扫描文档或图像文档的复杂性，如多样化的结构、包含</description>
+    </item>
+    <item>
+      <title>Langchain-LCEL用法介绍</title>
+      <link>http://localhost:64910/posts/chinese-preview/</link>
+      <pubDate>Wed, 17 Apr 2024 14:26:00 +0800</pubDate>
+      <guid>http://localhost:64910/posts/chinese-preview/</guid>
+      <description>LCEL 初探 LCEL: LangChain Expression Language 举个例子，代码如下： from langchain_core.output_parsers import StrOutputParser from langchain_core.prompts import ChatPromptTemplate from langchain_openai import ChatOpenAI prompt = ChatPromptTemplate.from_template(&amp;#34;tell me a short joke about {topic}&amp;#34;) model = ChatOpenAI(model=&amp;#34;gpt-4&amp;#34;) output_parser = StrOutputParser() chain = prompt | model | output_parser chain.invoke({&amp;#34;topic&amp;#34;: &amp;#34;ice cream&amp;#34;}) chain 的构建只是搭积木一样把 prompt，model，output_parser 拼了起来，相对于</description>
+    </item>
+    <item>
+      <title>RAG01-A Brief Introduction to RAG</title>
+      <link>http://localhost:64910/posts/chinese-preview/</link>
+      <pubDate>Fri, 01 Mar 2024 14:26:00 +0800</pubDate>
+      <guid>http://localhost:64910/posts/chinese-preview/</guid>
+      <description>本系列内容介绍 RAG 相关的概念，本文主要参考A Brief Introduction to Retrieval Augmented Generation 检索增强生成（RAG）简介 检索增强生成（Retrieval Augmented Generation）最初于 2020 年提出，作为一种端到端的方案，它结合了预训练的检索器和预</description>
+    </item>
+    <item>
+      <title>LangChain React Agent分析</title>
+      <link>http://localhost:64910/posts/chinese-preview/</link>
+      <pubDate>Sat, 17 Feb 2024 14:26:00 +0800</pubDate>
+      <guid>http://localhost:64910/posts/chinese-preview/</guid>
+      <description>LangChain 是一个开源库，它旨在使构建和部署与语言模型交互的应用程序变得更加容易。它的核心概念之一是 &amp;ldquo;Agent&amp;rdquo;，可以认为 Agent 是一个抽象层，代表了一个可以执行各种任务的实体。 LangChain 内置了多种</description>
     </item>
   </channel>
 </rss>
