@@ -34,7 +34,7 @@
       <link>http://localhost:1313/posts/chinese-preview/</link>
       <pubDate>Wed, 17 Apr 2024 14:26:00 +0800</pubDate>
       <guid>http://localhost:1313/posts/chinese-preview/</guid>
-      <description>LCEL 初探 LCEL: LangChain Expression Language 举个例子，代码如下： from langchain_core.output_parsers import StrOutputParser from langchain_core.prompts import ChatPromptTemplate from langchain_openai import ChatOpenAI prompt = ChatPromptTemplate.from_template(&amp;#34;tell me a short joke about {topic}&amp;#34;) model = ChatOpenAI(model=&amp;#34;gpt-4&amp;#34;) output_parser = StrOutputParser() chain = prompt | model | output_parser chain.invoke({&amp;#34;topic&amp;#34;: &amp;#34;ice cream&amp;#34;}) chain 的构建只是搭积木一样把 prompt，model，output_parser 拼了起来，相对于</description>
+      <description>LCEL是LangChain引入的一种全新语法，LCEL全称为LangChain Expression Language，可以更方便地构建LLM的Pipeline。在LangChain中，LCEL支持异步、并行、流式等特点</description>
     </item>
     <item>
       <title>RAG01-A Brief Introduction to RAG</title>

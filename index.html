@@ -44,19 +44,23 @@
         <ul>
             
             <li>
-                <a href="/">Home</a>
+                <a href="/">主页</a>
             </li>
             
             <li>
-                <a href="/posts/">归档</a>
+                <a href="/posts/">技术博客</a>
             </li>
             
             <li>
-                <a href="/tags/">Tags</a>
+                <a href="/diary/">随便写写</a>
             </li>
             
             <li>
-                <a href="/about/">About</a>
+                <a href="/tags/">标签</a>
+            </li>
+            
+            <li>
+                <a href="/about/">关于</a>
             </li>
             
         </ul>
@@ -207,7 +211,7 @@
     
     <div class="list">
         <div class="post_content markdown">
-            <p>LCEL 初探 LCEL: LangChain Expression Language 举个例子，代码如下： from langchain_core.output_parsers import StrOutputParser from langchain_core.prompts import ChatPromptTemplate from langchain_openai import ChatOpenAI prompt = ChatPromptTemplate.from_template(&#34;tell me a short joke about {topic}&#34;) model = ChatOpenAI(model=&#34;gpt-4&#34;) output_parser = StrOutputParser() chain = prompt | model | output_parser chain.invoke({&#34;topic&#34;: &#34;ice cream&#34;}) chain 的构建只是搭积木一样把 prompt，model，output_parser 拼了起来，相对于......</p>
+            <p>LCEL是LangChain引入的一种全新语法，LCEL全称为LangChain Expression Language，可以更方便地构建LLM的Pipeline。在LangChain中，LCEL支持异步、并行、流式等特点......</p>
         </div>
     </div>
     
