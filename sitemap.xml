@@ -2,54 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://forestneo.github.io/about/</loc>
     <lastmod>2024-07-10T20:24:28+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://forestneo.github.io/</loc>
     <lastmod>2024-07-10T20:24:28+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/agent/</loc>
+    <loc>https://forestneo.github.io/tags/agent/</loc>
     <lastmod>2024-06-14T14:26:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/chinese-preview/</loc>
+    <loc>https://forestneo.github.io/posts/chinese-preview/</loc>
     <lastmod>2024-06-14T14:26:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://forestneo.github.io/posts/</loc>
     <lastmod>2024-06-14T14:26:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/rag/</loc>
+    <loc>https://forestneo.github.io/tags/rag/</loc>
     <lastmod>2024-06-14T14:26:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://forestneo.github.io/tags/</loc>
     <lastmod>2024-06-14T14:26:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/langchain/</loc>
+    <loc>https://forestneo.github.io/tags/langchain/</loc>
     <lastmod>2024-06-13T14:26:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/chinese-preview/</loc>
+    <loc>https://forestneo.github.io/posts/chinese-preview/</loc>
     <lastmod>2024-06-13T14:26:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/chinese-preview/</loc>
+    <loc>https://forestneo.github.io/posts/chinese-preview/</loc>
     <lastmod>2024-05-16T14:26:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/chinese-preview/</loc>
+    <loc>https://forestneo.github.io/posts/chinese-preview/</loc>
     <lastmod>2024-04-17T14:26:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/chinese-preview/</loc>
+    <loc>https://forestneo.github.io/posts/chinese-preview/</loc>
     <lastmod>2024-03-01T14:26:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/chinese-preview/</loc>
+    <loc>https://forestneo.github.io/posts/chinese-preview/</loc>
     <lastmod>2024-02-17T14:26:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/memories/</loc>
+    <loc>https://forestneo.github.io/memories/</loc>
     <lastmod>2017-06-12T14:26:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/memories/chinese-preview/</loc>
+    <loc>https://forestneo.github.io/memories/chinese-preview/</loc>
     <lastmod>2017-06-12T14:26:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E9%9A%8F%E4%BE%BF%E5%86%99%E5%86%99/</loc>
+    <loc>https://forestneo.github.io/tags/%E9%9A%8F%E4%BE%BF%E5%86%99%E5%86%99/</loc>
     <lastmod>2017-06-12T14:26:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://forestneo.github.io/categories/</loc>
   </url>
 </urlset>
