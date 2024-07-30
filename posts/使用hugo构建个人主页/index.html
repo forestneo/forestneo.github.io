@@ -8,11 +8,11 @@
 	
 	
 	
-	<title>LangChain ｜ 林林一说</title>
+	<title>使用Hugo构建个人主页 ｜ 林林一说</title>
 	
     
     
-    <meta name="description" content="Hugo theme zozo example site." />
+    <meta name="description" content="碰到的问题：运行hugo server之后，在public/intex.html文件中，stylesheet的相关链接依然是localhost。这将导致部署到了github pages中之后，网站找不到对" />
     
 
     
@@ -21,8 +21,6 @@
     
 
 	
-	<link rel="alternate" type="application/rss+xml" href="https://forestneo.github.io/tags/langchain/index.xml" title="林林一说" />
-    
     
     <link rel="shortcut icon" href="https://forestneo.github.io/images/favicon.ico" />
 
@@ -106,39 +104,29 @@
     </div>
 </div>
         <div class="content">
-            <div class="list_with_title">
-                
-                <div class="listing_title">2024</div>
-                <div class="listing">
-                    
-                    <div class="listing_item">
-                        <div class="listing_post">
-                            <a href="/posts/langchain%E4%BD%BF%E7%94%A8%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8/">LangChain使用函数调用（Function Call）</a>
-                            <div class="post_time"><span class="date">06-13</span></div>
-                        </div>
+            <div class="post_page">
+                <div class="post animate__animated animate__fadeInDown">
+                    <div class="post_title post_detail_title">
+                        <h2><a href='/posts/%E4%BD%BF%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5/'>使用Hugo构建个人主页</a></h2>
+                        <span class="date">2024.07.11</span>
                     </div>
-                    
-                    <div class="listing_item">
-                        <div class="listing_post">
-                            <a href="/posts/langchain-lcel/">Langchain-LCEL用法介绍</a>
-                            <div class="post_time"><span class="date">04-17</span></div>
-                        </div>
+                    <div class="post_content markdown"><p>碰到的问题：运行<code>hugo server</code>之后，在<code>public/intex.html</code>文件中，stylesheet的相关链接依然是localhost。这将导致部署到了github pages中之后，网站找不到对应的css文件，因此显示效果不如人意。如下所示：</p>
+<p><img src="https://forest-pic.oss-cn-beijing.aliyuncs.com/202407112103230.png" alt=""></p>
+<p>本质问题应该是<code>hugo.toml</code>中<code>baseURL = 'https://forestneo.github.io'</code>未生效。这个问题也在官网上发现了同样的，但是没找到解决方法。</p>
+<p>为了暂时解决这个问题，我暂时的方法是本地预览成功之后，在代码库中进行一个全局替换，把<code>localhost</code>地址替换成了<code>https://forestneo.github.io</code>。未来看到别的好办法再来描述。</p>
+</div>
+                    <div class="post_footer">
+                        
                     </div>
-                    
-                    <div class="listing_item">
-                        <div class="listing_post">
-                            <a href="/posts/langchain-react-agent%E5%88%86%E6%9E%90/">LangChain React Agent分析</a>
-                            <div class="post_time"><span class="date">02-17</span></div>
-                        </div>
-                    </div>
-                    
                 </div>
                 
+                
+                <div class="doc_comments"></div>
+                
             </div>
-            <div class="pagination"></div>
         </div>
-        <a id="back_to_top" href="#" class="back_to_top"><i class="ri-arrow-up-s-line"></i></a>
     </div>
+    <a id="back_to_top" href="#" class="back_to_top"><i class="ri-arrow-up-s-line"></i></a>
     <footer class="footer">
     <div class="powered_by">
         <a href="https://varkai.com">Designed by VarKai,</a>
