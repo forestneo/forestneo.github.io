@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en-us" >
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="" />
+	
+	
+	
+	<title>Advanced RAG 07 ｜ 林林一说</title>
+	
+    
+    
+    <meta name="description" content="有效解析和理解非结构化文档中的表格时，设计 RAG 方案仍然是一大挑战。以图片格式存在的表格情况下，这更困难，如扫描文件中的表格。这些挑战至少包含一下几个方面： 扫描文档或图像文档的复杂性，如多样化的结构、包含" />
+    
+
+    
+    
+    <meta name="keywords" content="Hugo, theme, zozo" />
+    
+
+	
+    
+    <link rel="shortcut icon" href="http://localhost:1313/images/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/zozo.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/highlight.css" />
+
+    
+    
+</head>
+
+<body>
+    <div class="main animate__animated animate__fadeInDown">
+        <div class="nav_container animated fadeInDown">
+    <div class="site_nav" id="site_nav">
+        <ul>
+            
+            <li>
+                <a href="/">主页</a>
+            </li>
+            
+            <li>
+                <a href="/posts/">技术博客</a>
+            </li>
+            
+            <li>
+                <a href="/memories/">随便写写</a>
+            </li>
+            
+            <li>
+                <a href="/tags/">标签</a>
+            </li>
+            
+            <li>
+                <a href="/about/">关于</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="menu_icon">
+        <a id="menu_icon"><i class="ri-menu-line"></i></a>
+    </div>
+</div>
+        <div class="header animated fadeInDown">
+    <div class="site_title_container">
+        <div class="site_title">
+            <h1>
+                <a href="http://localhost:1313/">
+                    <span>林林一说</span>
+                </a>
+            </h1>
+        </div>
+        <div class="description">
+            <p class="sub_title">仰望星空，追求自由，启明未来</p>
+            <div class="my_socials">
+                
+                
+                <a href="%20" title="facebook" target="_blank"><i class="ri-facebook-fill"></i></a>
+                
+                
+                
+                <a href="forest" title="github" target="_blank"><i class="ri-github-fill"></i></a>
+                
+                
+                
+                <a href="%20" title="instagram" target="_blank"><i class="ri-instagram-fill"></i></a>
+                
+                
+                
+                <a href="%20" title="twitter" target="_blank"><i class="ri-twitter-fill"></i></a>
+                
+                
+                
+                <a href="%20" title="weibo" target="_blank"><i class="ri-weibo-fill"></i></a>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="content">
+            <div class="post_page">
+                <div class="post animate__animated animate__fadeInDown">
+                    <div class="post_title post_detail_title">
+                        <h2><a href='/posts/advanced-rag-07/'>Advanced RAG 07</a></h2>
+                        <span class="date">2024.05.16</span>
+                    </div>
+                    <div class="post_content markdown"><p>有效解析和理解非结构化文档中的表格时，设计 RAG 方案仍然是一大挑战。以图片格式存在的表格情况下，这更困难，如扫描文件中的表格。这些挑战至少包含一下几个方面：</p>
+<ul>
+<li>扫描文档或图像文档的复杂性，如多样化的结构、包含非文本元素以及手写和打印内容的结合，为自动准确提取表格信息带来了挑战。不准确的解析可能会破坏表格结构，使用不完整的表格进行嵌入不仅可能无法捕获表格的语义信息，而且还很容易破坏 RAG 结果。</li>
+<li>如何提取表格标题并有效地将它们链接到各自的表格。</li>
+<li>如何设计一个索引结构来有效地存储表格的语义信息。
+本文首先介绍管理 RAG 中表格的关键技术，然后回顾一些现有的开源解决方案，再提出并实施一个可能的解决方案。</li>
+</ul>
+<h1 id="关键技术">关键技术</h1>
+<h2 id="table-parsing表格解析">Table Parsing（表格解析）</h2>
+<p><img src="https://forest-pic.oss-cn-beijing.aliyuncs.com/image-20240501152928724.png" alt=""></p>
+<p>这个模块的主要功能是从非结构化文档或图像中准确提取表格结构。最好能够提取相应的表格标题，并方便开发者将表格标题与表格关联起来。目前有以下几种方法:</p>
+<ol>
+<li>使用多模态 LLM（multimodal LLM）如 GPT-4V 来识别表格并从每个 PDF 页面中提取信息</li>
+<li>利用专门的标检测模型，如<a href="https://github.com/microsoft/table-transformer" title="Table Transformer">Table Transformer</a>来辨别表结构</li>
+<li>使用开源框架，如<a href="https://unstructured-io.github.io/unstructured/best_practices/table_extraction_pdf.html" title="unstructured">unstructured</a>或者其他框架，这些框架允许对整个文档进行全面分析，并从分析的结果中提取与表相关的内容。</li>
+<li>使用端到端模型（如 Nougat、Donut 等）解析整个文档并提取与表格相关的内容。此方法不需要 OCR 模型。
+值得一提的是，无论使用何种方法提取表格信息，都应包含表格标题。这是因为在大多数情况下，表格标题是文档或论文作者对表格的简要描述，可以在很大程度上总结整个表格。在以上几种方法中，第四种可以相对较容易地对表格标题进行检测以及和表格进行关联。</li>
+</ol>
+<h2 id="index-structure">Index Structure</h2>
+<p>索引表格的方式大概可以分为以下几种</p>
+<ol>
+<li>仅对图像格式的表格进行索引</li>
+<li>仅对纯文本或 JSON 格式的表进行索引</li>
+<li>仅索引 LaTeX 格式的表格</li>
+<li>仅索引表的摘要（表的摘要通常可以使用 LLM 进行生成，也可以尝试使用多模态模型）</li>
+<li>从小到大或按照文档摘要索引结构（小块内容可以是表中的行，大块内容是图像、文本或者 LaTeX 格式表格），如下图所示
+<img src="https://forest-pic.oss-cn-beijing.aliyuncs.com/202405082223921.png" alt=""></li>
+</ol>
+<p>也有一些算法不需要对表进行解析，比如可以将相关的 PDF 页面（图像）和用户查询发送到 VQA 模型（如 DAN）或者多模态 LLM（如 GPT-4V），即可返回答案，如下图所示：</p>
+<p><img src="https://forest-pic.oss-cn-beijing.aliyuncs.com/202405082229654.png" alt=""></p>
+<p>同时，也可以将图片，文本块，用户查询发送到多模态 LLM 直接得到答案。</p>
+<p>值得注意的是，<em>并不是所有的方法都依赖于 RAG 流程</em>，比如：</p>
+<ul>
+<li>在特定数据集上进行训练，并使模型（类似 BERT 的 transformers）能够支持表理解的任务，如<a href="https://aclanthology.org/2020.acl-main.398.pdf" title="TAPAS">TAPAS</a>方法。</li>
+<li>使用 LLM 采用预训练、微调或者提示词的方式，是的 LLM 可以执行表格理解任务，如  <a href="https://arxiv.org/pdf/2305.13062.pdf" title="GPT4Table">GPT4Table</a>方法。</li>
+</ul>
+<h1 id="现有开源解决方案">现有开源解决方案</h1>
+<p>LlamaIndex 中提供了四种方法，其中前三种依赖多模态模型：</p>
+<ol>
+<li>检索相关图像，并将其发送到 GPT-4V 进行回复</li>
+<li>将每个 PDF 页面作为图像，让 GPT-4V 对每个页面进行 reasonings，并对其建立文本索引，然后根据 Image Reasoning Vector Store 进行查询答案</li>
+<li>使用 Table Transformer 从检索到的图像中裁切表信息，然后使用 GPT-4V 进行回答</li>
+<li>对裁剪后的表格图像 OCR 处理，将文本发送到 LLM 中进行回答
+Langchain 中也有一些解决方案，有以下几类：</li>
+</ol>
+<ul>
+<li><a href="https://github.com/langchain-ai/langchain/blob/master/cookbook/Semi_Structured_RAG.ipynb?ref=blog.langchain.dev" title="半结构化RAG">半结构化 RAG</a>：首先使用 Unstructured 从 pdf 中解析文本和表格，然后使用 multi-vector retriever 存储原始的表格和文本，同时对表格进行总结，最后用 LCEL 实现问答链路。主要流程如下所示（实际上这里的最后一个 LLM 并不是多模态 LLM）
+<img src="https://forest-pic.oss-cn-beijing.aliyuncs.com/202405082245122.png" alt=""></li>
+<li><a href="https://github.com/langchain-ai/langchain/blob/master/cookbook/Semi_structured_and_multi_modal_RAG.ipynb" title="半结构化与多模态RAG">半结构化与多模态 RAG</a>：这个当中实际上提出了多种方案，如下图所示。 - <em>Option1</em>：和半结构化 RAG 类似，使用多模态 embedding（如 CLIP）对图像和文本进行 embedding，然后将原始图像和文本块传入到多模态 LLM 进行回答 - <em>Option2</em>：也是使用多模态 LLM，根据图像生成文本摘要，然后对文本进行 embedding，这样通过传统 RAG 链路即可进行 QA - <em>Option3</em>：从图像生成文本摘要，然后进行 embedding，但是 QA 的时候，根据 embedding 找到原始的图像，并使用多模态 LLM 进行回答
+<img src="https://forest-pic.oss-cn-beijing.aliyuncs.com/202405082246685.png" alt=""></li>
+</ul>
+<h1 id="建议的方案">建议的方案</h1>
+<p>本文对关键技术和现有解决方案进行了总结、分类和讨论。基于此，我们提出了以下解决方案，如下图所示。为简单起见，这里省略了一些 RAG 模块，例如重新排名和查询重写。
+<img src="https://forest-pic.oss-cn-beijing.aliyuncs.com/202405082255804.png" alt=""></p>
+<ul>
+<li>表格解析：采用 Nougat，根据作者的描述，他的表检测功能比 unstructured 更强大，同时也能很好地提取表格标题，非常方便与表格进行关联</li>
+<li>文档摘要索引：小块的内容包括表格摘要，大块的内容包括 LaTeX 格式的表格和标题，然后采用 Multi-Vector Retriever 策略存储</li>
+<li>表格摘要：将表格和表格标题发送给 LLM 进行汇总</li>
+</ul>
+<p>这里介绍一下<a href="https://arxiv.org/pdf/2308.13418.pdf" title="Nougat">Nougat</a>，它基于<a href="https://arxiv.org/pdf/2111.15664.pdf" title="Donut">Donut</a>开发，不需要与 OCR 相关的模块，总体架构图为：
+<img src="https://forest-pic.oss-cn-beijing.aliyuncs.com/202405082258961.png" alt="">
+Nougat 解析公式表格的能力令人印象深刻，也能对表格标题进行关联（解析出来的表格式 LaTeX 格式），比如下面这个例子：
+<img src="https://forest-pic.oss-cn-beijing.aliyuncs.com/202405082259145.png" alt=""></p>
+<p>采用 Nougat，有以下有缺点：</p>
+<ul>
+<li>Pros（优点） - 可以将公示和表格等比较难解析的部分解析为 LaTeX 源码 - 解析的结果是类似于 Markdown 的半结构化文档 - 可以轻松获取表格标题并与表关联</li>
+<li>Cons（缺点） - 解析速度慢，大规模使用可能受限 - Nougat 是基于科研论文进行训练的，因此对于类似格式比较友好，对于其他格式可能效果一般 - 双栏中解析表格不如单栏中效果好</li>
+</ul>
+<h1 id="总结">总结</h1>
+<p>本文讨论了 RAG 流程中表处理的关键技术和现有解决方案，并提出了解决方案及其实现。本文推荐使用 nougat 来解析表格。但是，如果有更快、更有效的解析工具可用，我们也建议对其进行替换。对工具的态度是先有正确的想法，然后找到工具来实现它，而不是依赖某个具体的工具。在本文中，我们将所有表内容输入到 LLM。但是，在实际场景中，我们应该考虑表超过 LLM 上下文长度的情况，比如通过有效地分块方法来在一定程度上解决这个问题。</p>
+</div>
+                    <div class="post_footer">
+                        
+                        <div class="meta">
+                            <div class="info">
+                                <span class="field tags">
+                                    <i class="ri-stack-line"></i>
+                                    
+                                    <a href="http://localhost:1313/tags/rag/">RAG</a>
+                                    
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                <div class="doc_comments"></div>
+                
+            </div>
+        </div>
+    </div>
+    <a id="back_to_top" href="#" class="back_to_top"><i class="ri-arrow-up-s-line"></i></a>
+    <footer class="footer">
+    <div class="powered_by">
+        <a href="https://varkai.com">Designed by VarKai,</a>
+        <a href="http://www.gohugo.io/">Proudly published with Hugo</a>
+    </div>
+
+    <div class="footer_slogan">
+        <span>林林一说</span>
+    </div>
+</footer>
+    <script src="http://localhost:1313/js/jquery-3.5.1.min.js"></script>
+<link href="http://localhost:1313/css/fancybox.min.css" rel="stylesheet">
+<script src="http://localhost:1313/js/fancybox.min.js"></script>
+<script src="http://localhost:1313/js/zozo.js"></script>
+
+
+<script type="text/javascript" async
+    src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\[\[', '\]\]']],
+                processEscapes: true,
+                processEnvironments: true,
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                TeX: {
+                    equationNumbers: { autoNumber: "AMS" },
+                    extensions: ["AMSmath.js", "AMSsymbols.js"]
+                }
+            }
+        });
+
+        MathJax.Hub.Queue(function () {
+            
+            
+            
+            var all = MathJax.Hub.getAllJax(), i;
+            for (i = 0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+<style>
+    code.has-jax {
+        font: inherit;
+        font-size: 100%;
+        background: inherit;
+        border: inherit;
+        color: #515151;
+    }
+</style>
+
+
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>林林一说</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on 林林一说</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用Hugo构建个人主页</title>
+      <link>http://localhost:1313/posts/%E4%BD%BF%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5/</link>
+      <pubDate>Thu, 11 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/%E4%BD%BF%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5/</guid>
+      <description>碰到的问题：运行hugo server之后，在public/intex.html文件中，stylesheet的相关链接依然是localhost。这将导致部署到了github pages中之后，网站找不到对</description>
+    </item>
+    <item>
+      <title>关于</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Wed, 10 Jul 2024 20:24:28 +0800</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>你好，欢迎小木木的博客！</description>
+    </item>
+    <item>
+      <title>LLM/RAG如何进行意图识别（路由）</title>
+      <link>http://localhost:1313/posts/llm%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/</link>
+      <pubDate>Fri, 14 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/llm%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/</guid>
+      <description>为什么需要进行意图识别 RAG 的召回、生成过程逻辑是不够灵活的，无法解决用户的所有问题。在实际过程中，RAG 更适合作为一个子流程。即业务中往往需要首先识别用户 query 中的意图，再进入不同的分支流程进行响应（如图：</description>
+    </item>
+    <item>
+      <title>LangChain使用函数调用（Function Call）</title>
+      <link>http://localhost:1313/posts/langchain%E4%BD%BF%E7%94%A8%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8/</link>
+      <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/langchain%E4%BD%BF%E7%94%A8%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8/</guid>
+      <description>什么是函数调用 顾名思义，就是使得我们的代码流程能调用函数。在某些地方，函数也作为工具，因此也称工具调用（Tool Calling）。函数调用中，LLM的难点在于根据用户query去选择哪个函数，以及对应</description>
+    </item>
+    <item>
+      <title>Advanced RAG 07</title>
+      <link>http://localhost:1313/posts/advanced-rag-07/</link>
+      <pubDate>Thu, 16 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/advanced-rag-07/</guid>
+      <description>有效解析和理解非结构化文档中的表格时，设计 RAG 方案仍然是一大挑战。以图片格式存在的表格情况下，这更困难，如扫描文件中的表格。这些挑战至少包含一下几个方面： 扫描文档或图像文档的复杂性，如多样化的结构、包含</description>
+    </item>
+    <item>
+      <title>Langchain-LCEL用法介绍</title>
+      <link>http://localhost:1313/posts/langchain-lcel/</link>
+      <pubDate>Wed, 17 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/langchain-lcel/</guid>
+      <description>LCEL是LangChain引入的一种全新语法，LCEL全称为LangChain Expression Language，可以更方便地构建LLM的Pipeline。在LangChain中，LCEL支持异步、并行、流式等特点</description>
+    </item>
+    <item>
+      <title>RAG01-A Brief Introduction to RAG</title>
+      <link>http://localhost:1313/posts/rag01-introduction/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/rag01-introduction/</guid>
+      <description>本系列内容介绍 RAG 相关的概念，本文主要参考A Brief Introduction to Retrieval Augmented Generation 检索增强生成（RAG）简介 检索增强生成（Retrieval Augmented Generation）最初于 2020 年提出，作为一种端到端的方案，它结合了预训练的检索器和预</description>
+    </item>
+    <item>
+      <title>LangChain React Agent分析</title>
+      <link>http://localhost:1313/posts/langchain-react-agent%E5%88%86%E6%9E%90/</link>
+      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/langchain-react-agent%E5%88%86%E6%9E%90/</guid>
+      <description>LangChain 是一个开源库，它旨在使构建和部署与语言模型交互的应用程序变得更加容易。它的核心概念之一是 &amp;ldquo;Agent&amp;rdquo;，可以认为 Agent 是一个抽象层，代表了一个可以执行各种任务的实体。 LangChain 内置了多种</description>
+    </item>
+    <item>
+      <title>我的小米产品</title>
+      <link>http://localhost:1313/memories/%E6%88%91%E7%9A%84%E5%B0%8F%E7%B1%B3%E4%BA%A7%E5%93%81/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/memories/%E6%88%91%E7%9A%84%E5%B0%8F%E7%B1%B3%E4%BA%A7%E5%93%81/</guid>
+      <description>作为一个米粉，小米的产品自然不可少，做一个list记录一下自己买了多少小米的产品吧 小米系列 产品名称 价格 图片 推荐指数 推荐理由 小米剃须刀 100 米家自动香氛机 70 小米插线板 39 小米插线板（USB版本） 69 小米LED台</description>
+    </item>
+    <item>
+      <title>这就是老一辈的爱情吧</title>
+      <link>http://localhost:1313/memories/%E8%BF%99%E5%B0%B1%E6%98%AF%E8%80%81%E4%B8%80%E8%BE%88%E7%9A%84%E7%88%B1%E6%83%85%E5%90%A7/</link>
+      <pubDate>Mon, 31 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/memories/%E8%BF%99%E5%B0%B1%E6%98%AF%E8%80%81%E4%B8%80%E8%BE%88%E7%9A%84%E7%88%B1%E6%83%85%E5%90%A7/</guid>
+      <description>下班从总部到小区3.5公里的路途，总是一天中比较开心的时候。骑着小电驴埋没在回家的人流中，感觉自己也是那寻找归属生活的一份子，心情有一种莫名的平和感。路上给妈妈打了一个电话，随便聊了一聊。由于骑着小电</description>
+    </item>
+    <item>
+      <title>小时候</title>
+      <link>http://localhost:1313/memories/%E5%B0%8F%E6%97%B6%E5%80%99/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/memories/%E5%B0%8F%E6%97%B6%E5%80%99/</guid>
+      <description>《小时候》 我曾经爬过门前那棵枣树 拿着两毛钱一把的小刀在泥地上玩分土地的游戏 也翻开过阴湿的泥土，挖出蚯蚓 还在稻田里摔死过青蛙 随便扯根毛线，弄个杆子，便能钓得半桶龙虾 当他们学着《看云识天气》感叹大自然的时</description>
+    </item>
+    <item>
+      <title>给你一个方程，与那一时自觉聪明</title>
+      <link>http://localhost:1313/memories/%E7%BB%99%E4%BD%A0%E4%B8%80%E4%B8%AA%E6%96%B9%E7%A8%8B%E4%B8%8E%E9%82%A3%E4%B8%80%E6%97%B6%E8%87%AA%E8%A7%89%E8%81%AA%E6%98%8E/</link>
+      <pubDate>Wed, 27 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/memories/%E7%BB%99%E4%BD%A0%E4%B8%80%E4%B8%AA%E6%96%B9%E7%A8%8B%E4%B8%8E%E9%82%A3%E4%B8%80%E6%97%B6%E8%87%AA%E8%A7%89%E8%81%AA%E6%98%8E/</guid>
+      <description>一个爱情故事 1649年，斯德哥尔摩的街头，52岁的笛卡尔邂逅了18岁的瑞典公主克里斯汀。几天后，他意外的接到通知，国王聘请他做小公主的数学老师。跟随前来通知的侍卫一起来到皇宫，他见到了在街头偶遇的女孩</description>
+    </item>
+    <item>
+      <title>苦涩与生活</title>
+      <link>http://localhost:1313/memories/%E8%8B%A6%E6%B6%A9%E4%B8%8E%E7%94%9F%E6%B4%BB/</link>
+      <pubDate>Tue, 26 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/memories/%E8%8B%A6%E6%B6%A9%E4%B8%8E%E7%94%9F%E6%B4%BB/</guid>
+      <description>余幼时即嗜学。家贫，无从致书以观，每假借于藏书之家，手自笔录，计日以还。天大寒，砚冰坚，手指不可屈伸，弗之怠。录毕，走送之，不敢稍逾约。以是人多以书假余，余因得遍观群书。既加冠，益慕圣贤之道 ，又患无硕</description>
+    </item>
+    <item>
+      <title>怎样理解《残酷月光》</title>
+      <link>http://localhost:1313/memories/%E6%80%8E%E6%A0%B7%E7%90%86%E8%A7%A3%E6%AE%8B%E9%85%B7%E6%9C%88%E5%85%89/</link>
+      <pubDate>Sun, 08 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/memories/%E6%80%8E%E6%A0%B7%E7%90%86%E8%A7%A3%E6%AE%8B%E9%85%B7%E6%9C%88%E5%85%89/</guid>
+      <description>对歌手不了解，仅谈自己感受。 曾经因为那句没有梦想，何必远方我一直以为这是一首励志的歌曲。平常听，旋律中听到耳朵的词也只有这一句。 突然有这么一天，词还是那词，调子还是那调子，但句句话都像一种讽刺。 只要出</description>
+    </item>
+    <item>
+      <title>这一份小心翼翼</title>
+      <link>http://localhost:1313/memories/%E8%BF%99%E4%B8%80%E4%BB%BD%E5%B0%8F%E5%BF%83%E7%BF%BC%E7%BF%BC/</link>
+      <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/memories/%E8%BF%99%E4%B8%80%E4%BB%BD%E5%B0%8F%E5%BF%83%E7%BF%BC%E7%BF%BC/</guid>
+      <description>这篇文章写给自己和我的一个好朋友。本来是为要他的表白加油鼓劲的，没想到这小伙呼哧一下就事儿成了，心里也挺开心的。 关于 行色匆匆 和贺贺是在大概大二的时候认识的，虽然大一一个大班，可我素来不关心别人咋样再加</description>
+    </item>
+    <item>
+      <title>那年我十八岁</title>
+      <link>http://localhost:1313/memories/%E9%82%A3%E5%B9%B4%E6%88%91%E5%8D%81%E5%85%AB%E5%B2%81/</link>
+      <pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/memories/%E9%82%A3%E5%B9%B4%E6%88%91%E5%8D%81%E5%85%AB%E5%B2%81/</guid>
+      <description>十八岁那年 没有雨季 那年的快乐记忆犹新 那年的忧愁早已烟消云散 那年我十八岁 还很无知 课桌上的数理化和呼吸一样平常 生活很麻木 也很充实 梦想当个数学家 像费马一样 把自己的名字写进定理 那年我有了自己最喜欢的一辆车 每天</description>
+    </item>
+    <item>
+      <title>奕安的生日快乐</title>
+      <link>http://localhost:1313/memories/%E5%A5%95%E5%AE%89%E7%9A%84%E7%94%9F%E6%97%A5%E5%BF%AB%E4%B9%90/</link>
+      <pubDate>Sun, 24 Dec 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/memories/%E5%A5%95%E5%AE%89%E7%9A%84%E7%94%9F%E6%97%A5%E5%BF%AB%E4%B9%90/</guid>
+      <description>有一天，姐姐结婚了 又有一天，你出现了 平安夜的你和平安的你 刚开始的时候，整天都是闭着眼睛的，每天恨不得要把明天的时间借到今天来睡觉。不告诉我的话也不知道是男是女。那时候，哭声是你对这个世界唯一的倾诉。 那</description>
+    </item>
+    <item>
+      <title>怦然心动</title>
+      <link>http://localhost:1313/memories/%E6%80%A6%E7%84%B6%E5%BF%83%E5%8A%A8/</link>
+      <pubDate>Mon, 11 Dec 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/memories/%E6%80%A6%E7%84%B6%E5%BF%83%E5%8A%A8/</guid>
+      <description>Some of us get dipped in flat Some in satin Some in gloss But every once in a while you find someone who&amp;rsquo;s iridescent And when you do nothing will ever compare 这是电影《怦然心动》里面的台词，刚听到这个台词的时候，就直接被感动了。顺带想到之前情人坡拍到的情侣。 情窦未开的故事 02年，广东 那时候不知</description>
+    </item>
+    <item>
+      <title>像个段子一样活着</title>
+      <link>http://localhost:1313/memories/%E5%83%8F%E4%B8%AA%E6%AE%B5%E5%AD%90%E4%B8%80%E6%A0%B7%E6%B4%BB%E7%9D%80/</link>
+      <pubDate>Mon, 27 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/memories/%E5%83%8F%E4%B8%AA%E6%AE%B5%E5%AD%90%E4%B8%80%E6%A0%B7%E6%B4%BB%E7%9D%80/</guid>
+      <description>写东西就像养习惯，几周不写的结果就是好几周不写了，难在坚持。生活中偶尔发生一些小意思的事情，倒也想写下来，从这个角度说来，坚持不写的话也挺难的。 1 有人说，说想睡你的人是个色狼，但是说想和你一起睁开眼欣</description>
+    </item>
+    <item>
+      <title>盘点那些年的活物</title>
+      <link>http://localhost:1313/memories/%E7%9B%98%E7%82%B9%E9%82%A3%E4%BA%9B%E5%B9%B4%E7%9A%84%E6%B4%BB%E7%89%A9/</link>
+      <pubDate>Mon, 27 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/memories/%E7%9B%98%E7%82%B9%E9%82%A3%E4%BA%9B%E5%B9%B4%E7%9A%84%E6%B4%BB%E7%89%A9/</guid>
+      <description>和动物有关最早的，甚至不是自己脑海中的回忆。听他人说自己小时候可调皮，有一天妈妈洗衣服时候一抬头，脸直接吓青了。只看到我手里抓了一条花纹斑驳的毒蛇。也不知最后怎么被蛇饶了的，小小时候也没有对女性如此的</description>
+    </item>
+    <item>
+      <title>关于我（自黑篇）</title>
+      <link>http://localhost:1313/memories/%E5%85%B3%E4%BA%8E%E6%88%91%E8%87%AA%E9%BB%91%E7%AF%87/</link>
+      <pubDate>Fri, 06 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/memories/%E5%85%B3%E4%BA%8E%E6%88%91%E8%87%AA%E9%BB%91%E7%AF%87/</guid>
+      <description>你好，我姓孙，齐天大圣的孙 生而得名——孙林。上古时期，呸呸呸，我还没那么老。90年代，那时候名字一般是要加上辈分的。我得辈“绵”，所以按道理来说我应该叫“孙绵林”。那又为啥取到了“孙林”这个名字呢，听</description>
+    </item>
+    <item>
+      <title>写在华科里</title>
+      <link>http://localhost:1313/memories/%E5%86%99%E5%9C%A8%E5%8D%8E%E7%A7%91%E9%87%8C/</link>
+      <pubDate>Thu, 05 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/memories/%E5%86%99%E5%9C%A8%E5%8D%8E%E7%A7%91%E9%87%8C/</guid>
+      <description>想和你一起来看看这观乎人文化成天下 尽管你也不懂，我也不懂 走在校史馆前 有兴致地看看那些浮雕上都写着什么 一起站在这人均八棵树的绿空下 看学弟学妹背着书包骑着车匆匆走过 架好单反、调好位置 趁着没人的时候 赶紧拍下</description>
+    </item>
+    <item>
+      <title>写在睡不着的夜晚</title>
+      <link>http://localhost:1313/memories/%E5%86%99%E5%9C%A8%E7%9D%A1%E4%B8%8D%E7%9D%80%E7%9A%84%E5%A4%9C%E6%99%9A/</link>
+      <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/memories/%E5%86%99%E5%9C%A8%E7%9D%A1%E4%B8%8D%E7%9D%80%E7%9A%84%E5%A4%9C%E6%99%9A/</guid>
+      <description>《假如生活欺骗了你》 假如生活欺骗了你 不要悲伤，不要心急 忧郁的日子里须要镇静 相信吧，快乐的日子将会来临 心儿永远向往着未来 现在却常是忧郁 一切都是瞬息，一切都将会过去 而那过去了的，就会成为亲切的怀恋 到了大家</description>
+    </item>
+    <item>
+      <title>国庆&amp;中秋</title>
+      <link>http://localhost:1313/memories/%E5%9B%BD%E5%BA%86%E4%B8%AD%E7%A7%8B/</link>
+      <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/memories/%E5%9B%BD%E5%BA%86%E4%B8%AD%E7%A7%8B/</guid>
+      <description>24年前8月12日的那天，当我的哭声响彻整个房间的时候，这个世界就有点不一样了。 今天，祖国母亲要过生日了，想想也是巧合。今天竟是农历的8月12，也算是半个生日了。 一直没有看过天安门前的红旗飘飘，也是仓</description>
+    </item>
+    <item>
+      <title>我是如何成为一个米粉的</title>
+      <link>http://localhost:1313/memories/%E6%88%91%E6%98%AF%E5%A6%82%E4%BD%95%E6%88%90%E4%B8%BA%E4%B8%80%E4%B8%AA%E7%B1%B3%E7%B2%89%E7%9A%84/</link>
+      <pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/memories/%E6%88%91%E6%98%AF%E5%A6%82%E4%BD%95%E6%88%90%E4%B8%BA%E4%B8%80%E4%B8%AA%E7%B1%B3%E7%B2%89%E7%9A%84/</guid>
+      <description>首先，MIX2镇楼（虽然拍的不咋地，但是拍了很久） 12年，拿到录取通知书的那一个月迫不及待拥有了人生第一部完完全全属于自己的手机——iPhone4S，在读了将近两年的《Stay Hungry, Stay Foolish》之后</description>
+    </item>
+    <item>
+      <title>我与审美</title>
+      <link>http://localhost:1313/memories/%E6%88%91%E4%B8%8E%E5%AE%A1%E7%BE%8E/</link>
+      <pubDate>Mon, 28 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/memories/%E6%88%91%E4%B8%8E%E5%AE%A1%E7%BE%8E/</guid>
+      <description>怪人在台上胡乱地展现各种身姿，我们在台下不理解地看着，终于，身边的人慢慢理解了怪人传达出的意味。于是，自己成了那个不被理解的怪人。 昨天和一美院的师妹聊天，突然谈到了看展的问题。她说自己每周会看展，甚至</description>
+    </item>
+    <item>
+      <title>为什么鸡腿掉地上会让人很生气</title>
+      <link>http://localhost:1313/memories/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%B8%A1%E8%85%BF%E6%8E%89%E5%9C%B0%E4%B8%8A%E4%BC%9A%E8%AE%A9%E4%BA%BA%E5%BE%88%E7%94%9F%E6%B0%94/</link>
+      <pubDate>Mon, 12 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/memories/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%B8%A1%E8%85%BF%E6%8E%89%E5%9C%B0%E4%B8%8A%E4%BC%9A%E8%AE%A9%E4%BA%BA%E5%BE%88%E7%94%9F%E6%B0%94/</guid>
+      <description>也许因为不完美 就像剥好的鸡蛋上面有个抹不去的黑点 西瓜中心的那一口成了空馕 荔枝晶莹处探出小虫小小的身躯 以及她浅浅的酒窝伴着不对你的笑 也可能是出于无奈吧 像刚接到手却打翻在地的冰淇淋 散发着甜味的却还未成熟的</description>
+    </item>
+  </channel>
+</rss>

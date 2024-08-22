@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RAG on 林林一说</title>
+    <link>http://localhost:1313/tags/rag/</link>
+    <description>Recent content in RAG on 林林一说</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/rag/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LLM/RAG如何进行意图识别（路由）</title>
+      <link>http://localhost:1313/posts/llm%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/</link>
+      <pubDate>Fri, 14 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/llm%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/</guid>
+      <description>为什么需要进行意图识别 RAG 的召回、生成过程逻辑是不够灵活的，无法解决用户的所有问题。在实际过程中，RAG 更适合作为一个子流程。即业务中往往需要首先识别用户 query 中的意图，再进入不同的分支流程进行响应（如图：</description>
+    </item>
+    <item>
+      <title>Advanced RAG 07</title>
+      <link>http://localhost:1313/posts/advanced-rag-07/</link>
+      <pubDate>Thu, 16 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/advanced-rag-07/</guid>
+      <description>有效解析和理解非结构化文档中的表格时，设计 RAG 方案仍然是一大挑战。以图片格式存在的表格情况下，这更困难，如扫描文件中的表格。这些挑战至少包含一下几个方面： 扫描文档或图像文档的复杂性，如多样化的结构、包含</description>
+    </item>
+    <item>
+      <title>RAG01-A Brief Introduction to RAG</title>
+      <link>http://localhost:1313/posts/rag01-introduction/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/rag01-introduction/</guid>
+      <description>本系列内容介绍 RAG 相关的概念，本文主要参考A Brief Introduction to Retrieval Augmented Generation 检索增强生成（RAG）简介 检索增强生成（Retrieval Augmented Generation）最初于 2020 年提出，作为一种端到端的方案，它结合了预训练的检索器和预</description>
+    </item>
+  </channel>
+</rss>
