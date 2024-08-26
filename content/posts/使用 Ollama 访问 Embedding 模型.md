@@ -6,8 +6,8 @@ tags: []
 ---
 # 安装
 Ollama 是一款专为构建和管理 LLM 的应用工具。它具备一个简洁且用户友好的命令行界面，通过这一界面，用户可以轻松地部署和管理各类开源的 LLM。
-<img src="https://forest-pic.oss-cn-beijing.aliyuncs.com/202408261752452.png" style="width:500px;" />
 
+![202408261752452.png|387](https://forest-pic.oss-cn-beijing.aliyuncs.com/202408261752452.png)
 
 这个页面列出了支持 Ollama 平台的各个大型语言模型： https://ollama.com/library ，可以查看模型的更新时间、下载次数等信息。
 
