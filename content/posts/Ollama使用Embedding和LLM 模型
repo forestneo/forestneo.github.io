@@ -1,5 +1,5 @@
 ---
-title: "使用 Ollama 访问 Embedding 模型"
+title: "Ollama 使用 Embedding 和 LLM 模型"
 date: 2024-08-26
 draft: false
 tags: []
@@ -60,3 +60,53 @@ embedding = ollama.embeddings(
 ```
 
 更多接口可查看此页面： https://ollama.com/blog/embedding-models
+# 使用 LLM
+```
+ollama pull qwen3:0.6b
+
+```
+然后即可通过 http 发送请求，示例如下：
+```bash
+curl http://localhost:11434/v1/chat/completions \
+    -H "Content-Type: application/json" \
+    -d '{
+        "model": "qwen3:0.6b",
+        "messages": [
+            {
+                "role": "system",
+                "content": "You are a helpful assistant."
+            },
+            {
+                "role": "user",
+                "content": "Hello!/no_think"
+            }
+        ]
+    }'
+```
+
+此外，也可以在终端中这么对话：
+```bash
+ollama run qwen3:0.6b
+```
+
+Python 上，openai、langchain 等众多开源工具均接入了 ollama 的模型，以 openai 为例：
+
+```python
+from openai import OpenAI
+
+client = OpenAI(
+    base_url="http://localhost:11434/v1",
+    api_key="ollama",  # required, but unused
+)
+
+response = client.chat.completions.create(
+    model="qwen3:0.6b",
+    messages=[
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": "Who won the world series in 2020?"},
+        {"role": "assistant", "content": "The LA Dodgers won in 2020."},
+        {"role": "user", "content": "Where was it played?/no_think"},
+    ],
+)
+print(response.choices[0].message.content)
+```
