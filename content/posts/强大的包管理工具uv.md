@@ -45,6 +45,10 @@ uv python uninstall
 
 ## 项目管理
 ```bash
+# 创建项目
+uv init project_name
+uv init project_name --python 3.11
+
 # 创建虚拟环境
 uv venv
 uv venv --python 3.12.0
