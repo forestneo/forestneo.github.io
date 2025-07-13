@@ -5,7 +5,8 @@ defaultContentLanguage = "en"
 theme = "zozo"
 hasCJKLanguage = true                  # has chinese/japanese/korean ?  # 自动检测是否包含 中文\日文\韩文
 summaryLength = 100
-paginate = 4                           # shows the number of articles   # 首页显示文章数量
+[pagination]
+  pagerSize = 4                        # shows the number of articles   # 首页显示文章数量
 enableEmoji = true
 googleAnalytics = ""                   # your google analytics id       # Google统计代码
 disqusShortname = ""                   # your discuss shortname         # Disqus评论系统代码
@@ -65,9 +66,9 @@ pygmentscodefencesguesssyntax = true
   placeholder = " "
   visitor = true
 
-# Your socail's url
+# Your social's url
 # 社交地址配置
-[social]
+[params.social]
   github = "forest"
   twitter = " "
   facebook = " "

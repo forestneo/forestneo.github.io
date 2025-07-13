@@ -484,6 +484,7 @@ hr {
 .markdown code {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.9em;
+  line-height: 1.6;
   background: #f8fafc;
   border: none;
   white-space: pre;
