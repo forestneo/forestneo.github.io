@@ -49,6 +49,9 @@ uv python uninstall
 uv init project_name
 uv init project_name --python 3.11
 
+# 在项目内初始化项目
+uv init
+
 # 创建虚拟环境
 uv venv
 uv venv --python 3.12.0
