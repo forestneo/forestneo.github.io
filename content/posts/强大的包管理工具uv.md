@@ -51,6 +51,8 @@ uv init project_name --python 3.11
 
 # 在项目内初始化项目
 uv init
+# 安装依赖
+uv sync
 
 # 创建虚拟环境
 uv venv
@@ -66,4 +68,3 @@ uv add pandas langchain
 uv pip list
 ```
 
-如果直接往 `pyproject.toml` 中直接添加包，那么运行 `uv run main.py` 即可。好像没有找到类似于 `poetry install `的命令，初始化 python 环境。
