@@ -54,7 +54,7 @@ uv init
 # 安装依赖
 uv sync
 
-# 创建虚拟环境
+# 创建虚拟环境，vscode中，直接进到项目目录安装依赖之后，自动回生成虚拟环境
 uv venv
 uv venv --python 3.12.0
 
@@ -67,4 +67,28 @@ uv add pandas langchain
 # 查看包
 uv pip list
 ```
+
+## 开发可编辑包
+
+开发可编辑的包，需要有`src`文件夹，假如我创建了一个`haha`的项目，写了一个`add.py`那么目录结构如下所示：
+
+```
+haha git:(main) ✗ tree
+.
+├── main.py
+├── pyproject.toml
+├── README.md
+├── src
+│   ├── haha
+│   │   ├── __init__.py
+│   │   └── funcs
+│   │       └── add.py
+│   └── haha.egg-info
+│       ├── dependency_links.txt
+│       ├── PKG-INFO
+│       ├── SOURCES.txt
+│       └── top_level.txt
+└── uv.lock
+```
+这时候，只需要运行 `uv pip install -e /Users/.../haha` 即可将此包标记为正在开发中的包，会在 `uv.lock` 中生成对应的内容。
 
