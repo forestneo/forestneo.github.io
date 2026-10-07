@@ -1,0 +1,12 @@
+{
+  "validation": "passed",
+  "deleted_count": 33,
+  "remaining_old_articles": 87,
+  "preserved_python": [
+    "Python-一次调试装饰器中的bug记录",
+    "Python-Pyspark中UDF与random同时使用时bug记录F.md"
+  ],
+  "original_new_blog_posts_preserved": 11,
+  "regeneration_respects_deletions": true,
+  "broken_markdown_links": 0
+}

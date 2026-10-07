@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=6.6.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.6.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.6.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.6.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="创建Session1234567from pyspark.sql import SparkSession# method 1spark = SparkSession.builder.appName(&quot;Python Spark SQL basic example&quot;).config(&quot;spark.some.config.option&quot;, &quot;some-value&quot;).getOrCreate()# met">
+<meta name="keywords" content="Python,PySpark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python-PySpark学习">
+<meta property="og:url" content="http://forestneo.top/2022/01/24/编程-Python-PySpark学习/index.html">
+<meta property="og:site_name" content="ForestNeo&#39;s Space">
+<meta property="og:description" content="创建Session1234567from pyspark.sql import SparkSession# method 1spark = SparkSession.builder.appName(&quot;Python Spark SQL basic example&quot;).config(&quot;spark.some.config.option&quot;, &quot;some-value&quot;).getOrCreate()# met">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2022-02-24T10:21:52.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python-PySpark学习">
+<meta name="twitter:description" content="创建Session1234567from pyspark.sql import SparkSession# method 1spark = SparkSession.builder.appName(&quot;Python Spark SQL basic example&quot;).config(&quot;spark.some.config.option&quot;, &quot;some-value&quot;).getOrCreate()# met">
+
+
+
+
+
+
+  <link rel="canonical" href="http://forestneo.top/2022/01/24/编程-Python-PySpark学习/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Python-PySpark学习 | ForestNeo's Space</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">ForestNeo's Space</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">差分隐私小白</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-sitemap">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>站点地图</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://forestneo.top/2022/01/24/编程-Python-PySpark学习/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="DPer">
+      <meta itemprop="description" content="仰望星空，追求自由">
+      <meta itemprop="image" content="/images/head.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ForestNeo's Space">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Python-PySpark学习
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+        
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2022-01-24 15:27:53" itemprop="dateCreated datePublished" datetime="2022-01-24T15:27:53+08:00">2022-01-24</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2022-02-24 18:21:52" itemprop="dateModified" datetime="2022-02-24T18:21:52+08:00">2022-02-24</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/编程语言/" itemprop="url" rel="index"><span itemprop="name">编程语言</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/编程语言/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="创建Session"><a href="#创建Session" class="headerlink" title="创建Session"></a>创建Session</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pyspark.sql <span class="keyword">import</span> SparkSession</span><br><span class="line"></span><br><span class="line"><span class="comment"># method 1</span></span><br><span class="line">spark = SparkSession.builder.appName(<span class="string">"Python Spark SQL basic example"</span>).config(<span class="string">"spark.some.config.option"</span>, <span class="string">"some-value"</span>).getOrCreate()</span><br><span class="line"></span><br><span class="line"><span class="comment"># method 2</span></span><br><span class="line">spark = SparkSession.builder.appName(<span class="string">'SparkByExamples.com'</span>).getOrCreate()</span><br></pre></td></tr></table></figure>
+<h1 id="创建-DataFrame"><a href="#创建-DataFrame" class="headerlink" title="创建 DataFrame"></a>创建 DataFrame</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># method 1</span></span><br><span class="line">df = spark.createDataFrame([</span><br><span class="line">        (<span class="number">1</span>, <span class="number">144.5</span>, <span class="number">5.9</span>, <span class="number">33</span>, <span class="string">'M'</span>),</span><br><span class="line">        (<span class="number">2</span>, <span class="number">167.2</span>, <span class="number">5.4</span>, <span class="number">45</span>, <span class="string">'M'</span>),</span><br><span class="line">        (<span class="number">3</span>, <span class="number">124.1</span>, <span class="number">5.2</span>, <span class="number">23</span>, <span class="string">'F'</span>),</span><br><span class="line">        (<span class="number">4</span>, <span class="number">144.5</span>, <span class="number">5.9</span>, <span class="number">33</span>, <span class="string">'M'</span>),</span><br><span class="line">        (<span class="number">5</span>, <span class="number">133.2</span>, <span class="number">5.7</span>, <span class="number">54</span>, <span class="string">'F'</span>),</span><br><span class="line">        (<span class="number">3</span>, <span class="number">124.1</span>, <span class="number">5.2</span>, <span class="number">23</span>, <span class="string">'F'</span>),</span><br><span class="line">        (<span class="number">5</span>, <span class="number">129.2</span>, <span class="number">5.3</span>, <span class="number">42</span>, <span class="string">'M'</span>),</span><br><span class="line">    ], [<span class="string">'id'</span>, <span class="string">'weight'</span>, <span class="string">'height'</span>, <span class="string">'age'</span>, <span class="string">'gender'</span>]) </span><br><span class="line"></span><br><span class="line"><span class="comment"># 字典创建</span></span><br><span class="line">df = spark.createDataFrame([&#123;<span class="string">'name'</span>:<span class="string">'Alice'</span>,<span class="string">'age'</span>:<span class="number">1</span>&#125;,</span><br><span class="line">    &#123;<span class="string">'name'</span>:<span class="string">'Polo'</span>,<span class="string">'age'</span>:<span class="number">1</span>&#125;]) </span><br><span class="line"></span><br><span class="line"><span class="comment"># 指定schema创建</span></span><br><span class="line">schema = StructType([</span><br><span class="line">    StructField(<span class="string">"id"</span>, LongType(), <span class="keyword">True</span>),   </span><br><span class="line">    StructField(<span class="string">"name"</span>, StringType(), <span class="keyword">True</span>),</span><br><span class="line">    StructField(<span class="string">"age"</span>, LongType(), <span class="keyword">True</span>),</span><br><span class="line">    StructField(<span class="string">"eyeColor"</span>, StringType(), <span class="keyword">True</span>)</span><br><span class="line">])</span><br><span class="line">df = spark.createDataFrame(csvRDD, schema)</span><br><span class="line"></span><br><span class="line"><span class="comment"># method</span></span><br><span class="line">x = pd.Series([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])</span><br><span class="line">df = spark.createDataFrame(pd.DataFrame(x, columns=[<span class="string">"x"</span>]))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 从文件读</span></span><br><span class="line">df = spark.read.json(<span class="string">"data/people.json"</span>)</span><br><span class="line">airports = spark.read.csv(airportsFilePath, header=<span class="string">'true'</span>, inferSchema=<span class="string">'true'</span>, sep=<span class="string">'\t'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># method 3</span></span><br><span class="line">sc = spark.sparkContext</span><br><span class="line">lines = sc.textFile(<span class="string">"examples/src/main/resources/people.txt"</span>)</span><br><span class="line">parts = lines.map(<span class="keyword">lambda</span> l: l.split(<span class="string">","</span>))</span><br><span class="line">people = parts.map(<span class="keyword">lambda</span> p: Row(name=p[<span class="number">0</span>], age=int(p[<span class="number">1</span>])))</span><br><span class="line">df = spark.createDataFrame(people)</span><br><span class="line"></span><br><span class="line"><span class="comment"># method 4: 从pandas创建</span></span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">df = spark.createDataFrame(pd.DataFrame(pd.Series([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]), columns=[<span class="string">"x"</span>]))</span><br></pre></td></tr></table></figure>
+<h1 id="架构，信息查看"><a href="#架构，信息查看" class="headerlink" title="架构，信息查看"></a>架构，信息查看</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 打印架构</span></span><br><span class="line">df.printSchema()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 例如特定列中的行总数，其均值，标准差，列的最小值和最大值/空值计数</span></span><br><span class="line">df.describe([<span class="string">"age"</span>]).show()</span><br><span class="line">df.describe().show()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看列的类型 ，同pandas</span></span><br><span class="line">df.dtypes</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看列</span></span><br><span class="line">df.columns</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列联表</span></span><br><span class="line">df.crosstab(<span class="string">'Age'</span>, <span class="string">'Gender'</span>).show()</span><br><span class="line"></span><br><span class="line">+----------+---+---+</span><br><span class="line">|Age_Gender|  F|  M|</span><br><span class="line">+----------+---+---+</span><br><span class="line">|        <span class="number">42</span>|  <span class="number">0</span>|  <span class="number">1</span>|</span><br><span class="line">|        <span class="number">33</span>|  <span class="number">0</span>|  <span class="number">2</span>|</span><br><span class="line">|        <span class="number">45</span>|  <span class="number">0</span>|  <span class="number">1</span>|</span><br><span class="line">|        <span class="number">54</span>|  <span class="number">1</span>|  <span class="number">0</span>|</span><br><span class="line">|        <span class="number">23</span>|  <span class="number">2</span>|  <span class="number">0</span>|</span><br><span class="line">+----------+---+---+</span><br></pre></td></tr></table></figure>
+<p>Distinct 查找唯一值</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(df.select(<span class="string">'id'</span>).distinct().rdd.map(<span class="keyword">lambda</span> r: r[<span class="number">0</span>]).collect())</span><br><span class="line">df.select(<span class="string">'id'</span>).distinct().show()</span><br></pre></td></tr></table></figure>
+<h1 id="列操作"><a href="#列操作" class="headerlink" title="列操作"></a>列操作</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 选择列</span></span><br><span class="line">df[[<span class="string">'id'</span>, <span class="string">'weight'</span>]].show()</span><br><span class="line">df.select(<span class="string">'Age'</span>).show()</span><br><span class="line">df.select(<span class="string">'weight'</span>,<span class="string">'gender'</span>).show()</span><br><span class="line">df.select([<span class="string">'weight'</span>,<span class="string">'gender'</span>]).show()</span><br><span class="line"><span class="comment"># 也可以用col指定列</span></span><br><span class="line"><span class="keyword">from</span> pyspark.sql.functions <span class="keyword">import</span> col</span><br><span class="line">df.select(col(<span class="string">"weight"</span>), col(<span class="string">"gender"</span>)).show()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 改变列类型</span></span><br><span class="line">df.withColumn(<span class="string">"weight"</span>, df[<span class="string">"weight"</span>].cast(<span class="string">"Integer"</span>)).show()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 更新值</span></span><br><span class="line">df.withColumn(<span class="string">"weight"</span>, df[<span class="string">"weight"</span>]*<span class="number">100</span>).show()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建列</span></span><br><span class="line">df.withColumn(<span class="string">"weight2"</span>, df[<span class="string">"weight"</span>] * <span class="number">-1</span>).show()</span><br><span class="line"></span><br><span class="line"><span class="comment"># lit新增一列常量</span></span><br><span class="line"><span class="keyword">import</span> pyspark.sql.functions <span class="keyword">as</span> F</span><br><span class="line">df = df.withColumn(<span class="string">'mark'</span>, F.lit(<span class="number">1</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重命名列</span></span><br><span class="line">df.withColumnRenamed(<span class="string">"gender"</span>, <span class="string">"sex"</span>).show()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 对列排序</span></span><br><span class="line">df.sort(<span class="string">"weight"</span>, <span class="string">"gender"</span>).show()</span><br><span class="line">df.sort(df.weight.asc(), df.gender.desc()).show()</span><br><span class="line">df.sort(<span class="string">'weight'</span>,ascending=<span class="keyword">False</span>).show()</span><br><span class="line"><span class="comment"># 切片</span></span><br><span class="line">df.select(df[<span class="string">'weight'</span>]&gt;<span class="number">140</span>).show() <span class="comment"># 这个只会输出满足的行号</span></span><br><span class="line">df[df[<span class="string">'weight'</span>]&gt;<span class="number">140</span>].show() <span class="comment"># 这个会输出所有的详细结果</span></span><br><span class="line">df.filter(df.weight.between(<span class="number">150</span>,<span class="number">170</span>)).show() <span class="comment"># 这个会输出所有的详细结果</span></span><br><span class="line"></span><br><span class="line">color_df.filter(<span class="string">"color='green'"</span>).show()</span><br><span class="line">color_df.filter(<span class="string">"color like 'b%'"</span>).show()</span><br><span class="line">color_df.filter(color_df.length&gt;<span class="number">4</span>).filter(color_df[<span class="number">0</span>]!=<span class="string">'white'</span>).show()</span><br><span class="line">color_df.where(<span class="string">"color like '%yellow%'"</span>).show()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 利用SQL查询，首先注册为临时表，然后执行sql查询</span></span><br><span class="line">color_df.createOrReplaceTempView(<span class="string">"color_df"</span>)</span><br><span class="line">spark.sql(<span class="string">"select count(1) from color_df"</span>).show()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除列</span></span><br><span class="line">df.drop(<span class="string">'length'</span>).show()</span><br><span class="line">df.drop(<span class="string">'height'</span>,<span class="string">'age'</span>).show()</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pyspark.sql.functions <span class="keyword">import</span> col, lit</span><br><span class="line"><span class="keyword">from</span> pyspark.sql.types <span class="keyword">import</span> StructType, StructField, StringType,IntegerType</span><br><span class="line"></span><br><span class="line">spark = SparkSession.builder.appName(<span class="string">'SparkByExamples.com'</span>).getOrCreate()</span><br><span class="line">simpleData = [(<span class="string">"James"</span>,<span class="string">"Sales"</span>,<span class="string">"NY"</span>,<span class="number">90000</span>,<span class="number">34</span>,<span class="number">10000</span>),</span><br><span class="line">    (<span class="string">"Michael"</span>,<span class="string">"Sales"</span>,<span class="string">"NY"</span>,<span class="number">86000</span>,<span class="number">56</span>,<span class="number">20000</span>),</span><br><span class="line">    (<span class="string">"Robert"</span>,<span class="string">"Sales"</span>,<span class="string">"CA"</span>,<span class="number">81000</span>,<span class="number">30</span>,<span class="number">23000</span>),</span><br><span class="line">    (<span class="string">"Maria"</span>,<span class="string">"Finance"</span>,<span class="string">"CA"</span>,<span class="number">90000</span>,<span class="number">24</span>,<span class="number">23000</span>),</span><br><span class="line">    (<span class="string">"Raman"</span>,<span class="string">"Finance"</span>,<span class="string">"CA"</span>,<span class="number">99000</span>,<span class="number">40</span>,<span class="number">24000</span>),</span><br><span class="line">    (<span class="string">"Scott"</span>,<span class="string">"Finance"</span>,<span class="string">"NY"</span>,<span class="number">83000</span>,<span class="number">36</span>,<span class="number">19000</span>),</span><br><span class="line">    (<span class="string">"Jen"</span>,<span class="string">"Finance"</span>,<span class="string">"NY"</span>,<span class="number">79000</span>,<span class="number">53</span>,<span class="number">15000</span>),</span><br><span class="line">    (<span class="string">"Jeff"</span>,<span class="string">"Marketing"</span>,<span class="string">"CA"</span>,<span class="number">80000</span>,<span class="number">25</span>,<span class="number">18000</span>),</span><br><span class="line">    (<span class="string">"Kumar"</span>,<span class="string">"Marketing"</span>,<span class="string">"NY"</span>,<span class="number">91000</span>,<span class="number">50</span>,<span class="number">21000</span>)</span><br><span class="line">  ]</span><br><span class="line"></span><br><span class="line">schema = [<span class="string">"employee_name"</span>,<span class="string">"department"</span>,<span class="string">"state"</span>,<span class="string">"salary"</span>,<span class="string">"age"</span>,<span class="string">"bonus"</span>]</span><br><span class="line">df = spark.createDataFrame(data=simpleData, schema = schema)</span><br><span class="line">df.printSchema()</span><br><span class="line"><span class="comment"># truncate=True表示只展示前20个字符，默认 truncate=True</span></span><br><span class="line">df.show(truncate=<span class="keyword">False</span>)</span><br><span class="line"><span class="comment"># 输出前三行</span></span><br><span class="line">df.show(n=<span class="number">3</span>)</span><br><span class="line"></span><br><span class="line">df.groupBy(<span class="string">"department"</span>).sum(<span class="string">"salary"</span>).show()</span><br><span class="line">df.groupBy(<span class="string">"department"</span>,<span class="string">"state"</span>).sum(<span class="string">"salary"</span>,<span class="string">"bonus"</span>).show()</span><br><span class="line"></span><br><span class="line">df.groupBy(<span class="string">'department'</span>).agg(mean(<span class="string">'salary'</span>).alias(<span class="string">"mean salary"</span>)).show()</span><br></pre></td></tr></table></figure>
+<h1 id="Sql"><a href="#Sql" class="headerlink" title="Sql"></a>Sql</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">df.createOrReplaceTempView(<span class="string">"table"</span>)</span><br><span class="line">df_res1 = spark.sql(<span class="string">"SELECT * FROM table"</span>)</span><br><span class="line"><span class="comment"># 注意A.p1要加这个符号：`A.p1`</span></span><br><span class="line">df_res2 = spark.sql(<span class="string">"SELECT `A.p1` FROM table"</span>)</span><br><span class="line"></span><br><span class="line">spark.stop()</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pyspark.sql.functions <span class="keyword">import</span> when</span><br><span class="line"><span class="keyword">from</span> pyspark.sql.functions <span class="keyword">import</span> lit</span><br><span class="line">df.withColumn(<span class="string">"grade"</span>,when((df.age &lt; <span class="number">30</span>), lit(<span class="string">"young"</span>)).when((df.age &gt;= <span class="number">30</span>) &amp; (df.age &lt;= <span class="number">50</span>), lit(<span class="string">"middle"</span>)).otherwise(lit(<span class="string">"old"</span>))).show()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 这个不用lit的代码，效果也是一样的</span></span><br><span class="line">df.withColumn(<span class="string">"grade"</span>,when((df.age &lt; <span class="number">30</span>), <span class="string">"young"</span>).when((df.age &gt;= <span class="number">30</span>) &amp; (df.age &lt;= <span class="number">50</span>), <span class="string">"middle"</span>).otherwise(<span class="string">"old"</span>)).show()</span><br><span class="line"></span><br><span class="line">+---+------+------+---+------+------+</span><br><span class="line">| id|weight|height|age|gender| grade|</span><br><span class="line">+---+------+------+---+------+------+</span><br><span class="line">|  <span class="number">1</span>| <span class="number">144.5</span>|   <span class="number">5.9</span>| <span class="number">33</span>|     M|middle|</span><br><span class="line">|  <span class="number">2</span>| <span class="number">167.2</span>|   <span class="number">5.4</span>| <span class="number">45</span>|     M|middle|</span><br><span class="line">|  <span class="number">3</span>| <span class="number">124.1</span>|   <span class="number">5.2</span>| <span class="number">23</span>|     F| young|</span><br><span class="line">|  <span class="number">4</span>| <span class="number">144.5</span>|   <span class="number">5.9</span>| <span class="number">33</span>|     M|middle|</span><br><span class="line">|  <span class="number">5</span>| <span class="number">133.2</span>|   <span class="number">5.7</span>| <span class="number">54</span>|     F|   old|</span><br><span class="line">|  <span class="number">3</span>| <span class="number">124.1</span>|   <span class="number">5.2</span>| <span class="number">23</span>|     F| young|</span><br><span class="line">|  <span class="number">5</span>| <span class="number">129.2</span>|   <span class="number">5.3</span>| <span class="number">42</span>|     M|middle|</span><br><span class="line">+---+------+------+---+------+------+</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">spark = SparkSession.builder.appName(<span class="string">"Python Spark SQL basic example"</span>).config(<span class="string">"spark.some.config.option"</span>, <span class="string">"some-value"</span>).getOrCreate()</span><br><span class="line"><span class="keyword">from</span> pyspark <span class="keyword">import</span> SparkContext, SparkConf, SQLContext</span><br><span class="line">sc = spark.sparkContext</span><br><span class="line">sqlContext = SQLContext(sc)</span><br><span class="line">df.createOrReplaceTempView(<span class="string">"df1"</span>)</span><br><span class="line">df2.createOrReplaceTempView(<span class="string">"df2"</span>)</span><br><span class="line">sdf = sqlContext.sql(<span class="string">"SELECT * FROM df1 JOIN df2 on df1.id = df2.id"</span>)</span><br></pre></td></tr></table></figure>
+<h1 id="UDF"><a href="#UDF" class="headerlink" title="UDF"></a>UDF</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pyspark.sql.functions <span class="keyword">import</span> pandas_udf, PandasUDFType</span><br><span class="line"></span><br><span class="line">df = spark.createDataFrame([(<span class="number">1</span>, <span class="number">1.0</span>), (<span class="number">1</span>, <span class="number">2.0</span>), (<span class="number">2</span>, <span class="number">3.0</span>), (<span class="number">2</span>, <span class="number">5.0</span>), (<span class="number">2</span>, <span class="number">10.0</span>)], (<span class="string">"id"</span>, <span class="string">"v"</span>))</span><br><span class="line"></span><br><span class="line"><span class="meta">@pandas_udf("id long, v double", PandasUDFType.GROUPED_MAP)</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">subtract_mean</span><span class="params">(pdf)</span>:</span></span><br><span class="line">    <span class="comment"># pdf is a pandas.DataFrame</span></span><br><span class="line">    v = pdf.v</span><br><span class="line">    <span class="keyword">return</span> pdf.assign(v=v - v.mean())</span><br><span class="line"></span><br><span class="line">df.groupby(<span class="string">"id"</span>).apply(subtract_mean).show()</span><br><span class="line"><span class="comment"># +---+----+</span></span><br><span class="line"><span class="comment"># | id|   v|</span></span><br><span class="line"><span class="comment"># +---+----+</span></span><br><span class="line"><span class="comment"># |  1|-0.5|</span></span><br><span class="line"><span class="comment"># |  1| 0.5|</span></span><br><span class="line"><span class="comment"># |  2|-3.0|</span></span><br><span class="line"><span class="comment"># |  2|-1.0|</span></span><br><span class="line"><span class="comment"># |  2| 4.0|</span></span><br><span class="line"><span class="comment"># +---+----+</span></span><br></pre></td></tr></table></figure>
+<h1 id="未解决的问题"><a href="#未解决的问题" class="headerlink" title="未解决的问题"></a>未解决的问题</h1><h2 id="P1"><a href="#P1" class="headerlink" title="P1"></a>P1</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pyspark.sql <span class="keyword">import</span> SparkSession</span><br><span class="line"></span><br><span class="line">spark = SparkSession.builder.appName(<span class="string">"Python Spark SQL basic example"</span>).config(<span class="string">"spark.some.config.option"</span>,<span class="string">"some-value"</span>).getOrCreate()</span><br><span class="line">sc = spark.sparkContext</span><br><span class="line">cols = [<span class="string">"A.p1"</span>, <span class="string">"B.p1"</span>]</span><br><span class="line">df = spark.createDataFrame([[<span class="number">1</span>,<span class="number">2</span>],[<span class="number">4</span>,<span class="number">89</span>],[<span class="number">12</span>,<span class="number">60</span>]],schema=cols)</span><br><span class="line">df.show()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 1. Works</span></span><br><span class="line">df1 = df.withColumn(<span class="string">'sum1'</span>, sum([df[col] <span class="keyword">for</span> col <span class="keyword">in</span> [<span class="string">"`A.p1`"</span>, <span class="string">"`B.p1`"</span>]]))</span><br><span class="line">df1.show()</span><br><span class="line">df2 = df.withColumn(<span class="string">'sum1'</span>, sum([df[col] <span class="keyword">for</span> col <span class="keyword">in</span> [<span class="string">"A.p1"</span>, <span class="string">"B.p1"</span>]]))</span><br><span class="line">df2.show()</span><br><span class="line"></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># #2. Doesnt work</span></span><br><span class="line"><span class="comment"># df2 = df.withColumn('sum1', F.sum([df[col] for col in ["`A.p1`","`B.p1`"]]))</span></span><br><span class="line"><span class="comment"># df2.show()</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># #3. Doesnt work</span></span><br><span class="line"><span class="comment"># df3 = df.withColumn('sum1', sum(df.select(["`A.p1`","`B.p1`"])))</span></span><br><span class="line"><span class="comment"># df3.show()</span></span><br><span class="line"></span><br><span class="line">spark.stop()</span><br></pre></td></tr></table></figure>
+<ul>
+<li>不明白为何列名要用这种形式：[“`A.p1`“, “`B.p1`“]，该问题已解决，在df.select里面，不用中括号也可以写成：df.select(‘A.p1’, ‘B.p1’)</li>
+<li>不明白为什么2，3不工作</li>
+</ul>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>Thanks for rewarding</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="DPer 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="DPer 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python/" rel="tag"><i class="fa fa-tag"></i> Python</a>
+          
+            <a href="/tags/PySpark/" rel="tag"><i class="fa fa-tag"></i> PySpark</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2022/01/24/编程-Python-grpc工具学习/" rel="next" title="Python-grpc工具学习">
+                <i class="fa fa-chevron-left"></i> Python-grpc工具学习
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2022/01/27/PAPER-Towards Practical Differential Privacy for SQL Queries/" rel="prev" title="<span style=" background:green;"=""><font color="#000000">论文阅读</font>-Towards Practical Differential Privacy for SQL Queries">
+                <span style="background:green;"><font color="#000000">论文阅读</font></span>-Towards Practical Differential Privacy for SQL Queries <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div id="gitalk-container">
+    </div>
+    
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/head.png" alt="DPer">
+            
+              <p class="site-author-name" itemprop="name">DPer</p>
+              <p class="site-description motion-element" itemprop="description">仰望星空，追求自由</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">120</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">22</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">67</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/ForestNeo" title="GitHub &rarr; https://github.com/ForestNeo" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:dr.forestneo@gmail.com" title="E-Mail &rarr; mailto:dr.forestneo@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="/350023615" title="QQ &rarr; 350023615"><i class="fa fa-fw fa-qq"></i>QQ</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#创建Session"><span class="nav-number">1.</span> <span class="nav-text">创建Session</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建-DataFrame"><span class="nav-number">2.</span> <span class="nav-text">创建 DataFrame</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#架构，信息查看"><span class="nav-number">3.</span> <span class="nav-text">架构，信息查看</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#列操作"><span class="nav-number">4.</span> <span class="nav-text">列操作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Sql"><span class="nav-number">5.</span> <span class="nav-text">Sql</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#UDF"><span class="nav-number">6.</span> <span class="nav-text">UDF</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#未解决的问题"><span class="nav-number">7.</span> <span class="nav-text">未解决的问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#P1"><span class="nav-number">7.1.</span> <span class="nav-text">P1</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2023</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">DPer</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=6.6.0"></script>
+
+  <script src="/js/src/motion.js?v=6.6.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=6.6.0"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=6.6.0"></script>
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=6.6.0"></script>
+<script src="/js/src/post-details.js?v=6.6.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=6.6.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <script src="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+
+  
+  
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.css">
+
+  
+  
+  <script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+   <script>
+        var gitalk = new Gitalk({
+          clientID: '0c8ec9e7e3c5573cb8fe',
+          clientSecret: '6ed0cb45c22b829cf3dc3a32976fe70c27228359',
+          repo: 'ForestNeo-website',
+          owner: 'forestneo',
+          admin: ['forestneo'],
+          id: md5(location.pathname),
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')
+       </script>
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
+

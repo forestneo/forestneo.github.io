@@ -1,0 +1,11 @@
+{{- $destination := .Destination -}}
+{{- $url := urls.Parse $destination -}}
+{{- if and (not $url.IsAbs) (not (strings.HasPrefix $url.Path "/")) -}}
+  {{- if strings.HasPrefix .Page.File.Dir "posts/ForestNeo-markdown/" -}}
+    {{- $asset := path.Clean (path.Join .Page.File.Dir $url.Path) -}}
+    {{- if fileExists (path.Join "content" $asset) -}}
+      {{- $destination = strings.ToLower $asset | relURL -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+<img src="{{ $destination | safeURL }}" alt="{{ .PlainText }}"{{ with .Title }} title="{{ . }}"{{ end }}>

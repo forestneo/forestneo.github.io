@@ -1,0 +1,140 @@
+{
+  "deleted": [
+    {
+      "file": "articles/2018/2018-12-01-系统配置-Hexo-NexT主题鼠标点击爱心特效.md",
+      "title": "Hexo NexT主题鼠标点击爱心特效"
+    },
+    {
+      "file": "articles/2019/2019-01-05-系统配置-Hexo-NexT主题加入评论系统.md",
+      "title": "系统配置-Hexo NexT加入评论系统"
+    },
+    {
+      "file": "articles/2019/2019-04-02-Latex-公式篇.md",
+      "title": "Latex-公式篇"
+    },
+    {
+      "file": "articles/2019/2019-04-26-Latex-IEEE模板添加页码.md",
+      "title": "Latex-IEEE模板添加页码"
+    },
+    {
+      "file": "articles/2019/2019-04-29-总结-可以借鉴的论文句子.md",
+      "title": "总结-可以借鉴的论文句子"
+    },
+    {
+      "file": "articles/2019/2019-08-19-总结-SCI写作常用句式总结（一）.md",
+      "title": "总结-SCI写作常用句式总结（一）"
+    },
+    {
+      "file": "articles/2019/2019-08-19-总结-SCI论文英文写作模板.md",
+      "title": "总结-SCI论文英文写作模板"
+    },
+    {
+      "file": "articles/2019/2019-08-20-总结-常用术语介绍.md",
+      "title": "总结-常用术语介绍"
+    },
+    {
+      "file": "articles/2019/2019-10-07-系统配置-PyCharm中添加Python文件模板.md",
+      "title": "系统配置-PyCharm中添加Python文件模板"
+    },
+    {
+      "file": "articles/2019/2019-10-08-软件推荐-Mac平台软件推荐.md",
+      "title": "Mac平台软件推荐-ScrollReverser"
+    },
+    {
+      "file": "articles/2019/2019-10-20-编程-Python-Pandas学习.md",
+      "title": "Python-Pandas学习"
+    },
+    {
+      "file": "articles/2019/2019-10-20-编程-Python-eval函数.md",
+      "title": "Python-eval函数"
+    },
+    {
+      "file": "articles/2019/2019-11-08-编程-Python-图形绘制.md",
+      "title": "Python-图形绘制"
+    },
+    {
+      "file": "articles/2019/2019-11-15-编程-Python-Numpy空值判断.md",
+      "title": "Python-Numpy空值判断"
+    },
+    {
+      "file": "articles/2019/2019-12-25-PAPER List.md",
+      "title": "论文阅读目录一览表"
+    },
+    {
+      "file": "articles/2020/2020-07-04-趣味题目-酒店邻居问题.md",
+      "title": "趣味题目-酒店邻居问题"
+    },
+    {
+      "file": "articles/2021/2021-07-22-系统配置-Hexo搭建博客系统.md",
+      "title": "系统配置-Hexo搭建博客系统"
+    },
+    {
+      "file": "articles/2021/2021-07-22-系统配置-Typora+PicGo配置图床.md",
+      "title": "系统配置-Typora+PicGo配置图床"
+    },
+    {
+      "file": "articles/2021/2021-10-08-技术扫盲-Paillier.md",
+      "title": "密码学-公钥加密算法 Paillier"
+    },
+    {
+      "file": "articles/2021/2021-10-08-技术扫盲-RSA.md",
+      "title": "密码学-公钥加密算法 RSA"
+    },
+    {
+      "file": "articles/2022/2022-01-21-编程-Python-星运算符.md",
+      "title": "Python-*和**运算符"
+    },
+    {
+      "file": "articles/2022/2022-01-24-编程-Python-PySpark学习.md",
+      "title": "Python-PySpark学习"
+    },
+    {
+      "file": "articles/2022/2022-01-24-编程-Python-grpc工具学习.md",
+      "title": "Python-grpc工具学习"
+    },
+    {
+      "file": "articles/2022/2022-01-24-编程-Python-格式化输出.md",
+      "title": "Python-格式化输出"
+    },
+    {
+      "file": "articles/2022/2022-02-16-系统配置-Git使用.md",
+      "title": "系统配置-Git使用教程"
+    },
+    {
+      "file": "articles/2022/2022-02-22-编程-Python-Threading.md",
+      "title": "Python-Threading学习"
+    },
+    {
+      "file": "articles/2022/2022-08-01-编程-TPCH数据生成.md",
+      "title": "编程-TPCH数据生成"
+    },
+    {
+      "file": "articles/2022/2022-08-11-编程-Python-Pyspark对Column使用UDF.md",
+      "title": "Python-Pyspark对Column使用UDF.md"
+    },
+    {
+      "file": "articles/2023/2023-01-27-博客-利用python自动获取WeeklyDP文章.md",
+      "title": "技术博客-利用python自动获取WeeklyDP文章"
+    },
+    {
+      "file": "articles/2020/2020-05-27-数学基础-散度.md",
+      "title": "数学基础-散度"
+    },
+    {
+      "file": "articles/2020/2020-05-27-数学基础-界.md",
+      "title": "数学基础-各种界"
+    },
+    {
+      "file": "articles/2020/2020-05-27-数学基础-范数.md",
+      "title": "数学基础-范数"
+    },
+    {
+      "file": "articles/2022/2022-07-17-分享-我是如何从头开始写一篇顶级论文的.md",
+      "title": "分享-我是如何从头开始写一篇顶级论文的"
+    }
+  ],
+  "retained_python": [
+    "Python-一次调试装饰器中的bug记录",
+    "Python-Pyspark中UDF与random同时使用时bug记录F.md"
+  ]
+}

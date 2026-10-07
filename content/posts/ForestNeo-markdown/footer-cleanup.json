@@ -1,0 +1,285 @@
+{
+  "scanned_markdown_files": 123,
+  "changed_articles": 45,
+  "remaining_recovered_articles": 87,
+  "validation": "passed",
+  "frontmatter_and_body_prefix_preserved": true,
+  "promotional_footer_remaining": 0,
+  "articles": [
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2018/2018-07-22-技术扫盲-Differential-Privacy概念介绍.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "c5c15a1bdcd8e58a093c78b01612fb10b46336a5a7960acd7ff255b42b3775a7",
+      "after_sha256": "9809e19a00990a5ceffeffeb7e39dc5cd8758f7cfd6edc843e55d3972900347c"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2018/2018-07-27-技术扫盲-DP-Laplace-Mechanism.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "370bcfe2321e62cdd98602e5481020d92f1d658b2ee1624f79ee0e84ee426893",
+      "after_sha256": "cde0665c9cf19427ce4c7bc75ba947b7e06b4feb98ebdb43f04ba7e089c67dad"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2018/2018-08-02-技术扫盲-DP指数机制.md",
+      "kind": "promotion_only_summary",
+      "before_sha256": "e7e7000fb6d7bd15a734e414450cd8d8860d1d570b682f32e71336fb656f09d5",
+      "after_sha256": "b4ac5168425744bc4a9b0d5495f07041070901d4b1f5028f80d5b6160e84bbe1"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2018/2018-08-04-技术扫盲-DP组合性质.md",
+      "kind": "promotion_only_summary",
+      "before_sha256": "3d489f38e6df294e1a9bbad9b4c21b103c5e59eb8147dd9d646afb3872277101",
+      "after_sha256": "4ca361654e3be3ea9f69be4e42db7669390b2ffe6585c8be29404d792bb6bbab"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2018/2018-09-19-PAPER-Secure Two Party Differentially Private Data Release for Vertically Partitioned Data.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "2861fe69b24dde7d07b7a346bea11b227b62e8334e3c3e9d3d42c83474cb0249",
+      "after_sha256": "0192c6434191a859a39790c4d894a4104b496f257744cacdca66b6ff7088951f"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2018/2018-11-05-PAPER-Distance Aware Encoding of Numerical Values for Privacy Preserving Record Linkage.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "436d95264b0ac5692d9fea9d0775bd5bda6e1af34c001f3ed70e76e719513c95",
+      "after_sha256": "0936358c95b40b3632de0405b0dd03f4b0dac2ecd23eb4eb3fd4df18553e57c5"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2018/2018-11-05-PAPER-Privacy Preserving Triangle Counting in Large Graphs.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "eed1bcb75136b4faec452f9fd04cf6fb1eff254ccb4ba4d54036d80dd43baae1",
+      "after_sha256": "742db5305949888f563fbcd2724809e3d87995e4b9128ca47a810d0f7c250a0f"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2019/2019-01-02-PAPER-RAPPOR.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "5912585f34f5ffc53cea873600ab0b4eef3591a9363232ed062b0e2c3702b7a9",
+      "after_sha256": "73066a17c8faa41b84460176e3f23c92b01dc82faaeeefbb289aa8633ad95ca1"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2019/2019-01-08-PAPER-Randomized Bit Vector Privacy Preserving Encoding Mechanism.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "6ec5c49232e85e61c7b44e7350524466324b7fe2b63a7cfd044323dbb2371165",
+      "after_sha256": "0b788df255e6588541acf67cfd39e37410b4a9dfed4450d0fbc6ef1d8d660d8f"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2019/2019-01-26-PAPER-Collecting Telemetry Data Privately.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "eed220a5c8d24411ba6ba2525387518eaa0e4915ebf9b1cf26ca11c6ddbec8e6",
+      "after_sha256": "b0585210734fec0c17a58f085e2061265a1abe1e409c908e9725f0417fa72537"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2019/2019-02-16-PAPER-Collecting and Analyzing Multidimensional Data with Local Differential Privacy.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "4edbeecc377947b43fd88bf368e27b804b8d0ab68217d977342df4ef6aa6b22e",
+      "after_sha256": "47209c2f14f5d6e1d2e630a7b2c8c58ca8cf2c0a4d510c6b0e7d6d704b1a973f"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2019/2019-03-21-技术扫盲-Guassian-Mechanism.md",
+      "kind": "trailing_qr_code",
+      "before_sha256": "97714277737b306217c06dd1bf24c4a32bbef394626411f64a0fda1563bb2778",
+      "after_sha256": "5380305b220637f126b5dba1ffcf156b0a80d2b024beb3a2a5bf64daad972be0"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2019/2019-03-25-PAPER-PrivKV Key-Value Data Collection with Local Differential Privacy.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "ae4721043a3a48b700c70e216a333256a9c1d5b91af3856bb218122c99f4a7b6",
+      "after_sha256": "8ee0a0190b785e2186b36b9e615da9040bedcd31751776f3d0078b349d41d400"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2019/2019-04-29-PAPER-A Utility-optimized Framework for Personalized Private Histogram Estimation.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "d56b9fd75694ffe743ab9001db96a18a3180e22bcb1b75fedbd9d2f68252260c",
+      "after_sha256": "d6c53124544be2d4c82ae79682648aaed0ae8645e8cd4094988d990eada6b77d"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2019/2019-06-17-PAPER-Approximate multiple count in Wireless Sensor Networks.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "594dc2916d8beacbfdef98c7e32419de5ecc50512006105dfb725da1d9b68d4e",
+      "after_sha256": "7704c945a829eeddc2ba2543c881fe3b0ef6b5df6d887030e1c07fa0e29aa211"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2019/2019-07-04-PAPER-Private Weighted Histogram Aggregation in Crowdsourcing.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "614d0efbbef18e6b5fbc19d4c3d808658f9106a9fb4aea346273f535df4be06e",
+      "after_sha256": "8298e84b9b2ac139a832cc252c77aa3fe290ffc0b6317a4212ef079b77ae5acf"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2019/2019-07-17-PAPER-Locally Differentially Private Protocols for Frequency Estimation.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "d84465b5eb5ed3fb8a582d2c053617305fc32ab9e55741a8effa1fa93df341e1",
+      "after_sha256": "afe81fef1eb9c523b1e3d28ed6862845e6a4f535ed2e88bd2c885ed8efd0db07"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2019/2019-09-16-PAPER-The Staircase Mechanism in Differential Privacy.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "5c27ae08fbc97181198dc75a1fbfe0fc4e61f676ccd5ed0bd86c3c061b11d835",
+      "after_sha256": "1d7af77e1b80d185d48bfcdfe7ac59a6e2e8978bc13817c4347a871a5110737d"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2019/2019-11-06-技术扫盲-Secret-Sharing.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "abd7b693e8b2e8a54ad5b0e7cc7a137008ec653bd2868b233d8e6bd800a8d31b",
+      "after_sha256": "b3e9a7c3c83ae2ad19cf2fc735763b873f116134bd75202261db779e3a6dccd4"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2019/2019-11-11-PAPER-The Prevention and Handling of the Missing Data.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "80e63c7a083b62cd09717ee7b961e3efb6cca8e87d27e69eda6cc330d06bd1c3",
+      "after_sha256": "0421bb31ecbded5e99d5d1b490c2e86de3cb6c5cdf863a2680de188f5428d243"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2019/2019-12-25-PAPER-Resolving Conflicts in Heterogeneous Data by Truth Discovery and Source Reliability Estimation.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "a0f0e23373d1fbfa10a0992c3860261c81bb7b7302ad2f15eb001f551b23236f",
+      "after_sha256": "5f61c0551d0c0501323da0c32e63c0181721ceb2dca0dfb3b9d62337464cca0d"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2020/2020-02-25-PAPER-BiSample.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "cdb3477e102803896f37fafb18eea7f663cc74072ab1209a449ba94958194eb8",
+      "after_sha256": "acdd9ffc5d8a2ba0a064ebff47eccbb6db00c64fce523f4466a52731a43048de"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2020/2020-02-28-PAPER-PCKV Locally Differentially Private Correlated Key-Value Data Collection with Optimized Utility.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "99904fe1930ef720e522f0b65b54357f2671097f8f1f0e91f22f89701a21e5e1",
+      "after_sha256": "4c27502df125f9372ee15112d121f126cab4340917d7c7eb0ec677465b94a0f5"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2020/2020-03-11-视频资源-分布式机器学习（上）.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "d3a02bb0f4b6cebcfbcacd9263a875886dd66591dcb6b8207f9c3b57cb54f2bd",
+      "after_sha256": "c9eceef3b1db85218a987a1c5b2bb6c4a3695ce9a78b5392d1cac4b2da6e6ecb"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2020/2020-03-12-视频资源-分布式机器学习（中）.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "f523210cc5599071337f7d4db58678606e664027cca50dd9aa560a7a80df4387",
+      "after_sha256": "a3d93f0433f0f3396f7c304e9a7b16a8c7b50900a14e75636d41e5f404a976e2"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2020/2020-03-13-视频资源-分布式机器学习（下）.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "6c1677c4837ad810d47c2f7336769e0a057498f05c4daed2d1781923716b3357",
+      "after_sha256": "f768f229c8d8b871c73ccaf7c9e0c9462024c9e4137965736d7c2b52dedaa75a"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2020/2020-03-14-PAPER-Federated Machine Learning Concept and Applications.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "1f5981c83d055fb45d83e4b566f46dc5a2df1dbe8d4a1fb382d8e5d871788766",
+      "after_sha256": "efa449b6d006ad4333350b0ccee71412de522555e216cf370e9d746d201045d2"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2020/2020-04-02-PAPER-FedSel Federated SGD under Local Differential Privacy with Top-k Dimension Selection.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "034ba2e720326e3cf2571b02f29144bde07c27dc3f354991e460a9ac57c019ec",
+      "after_sha256": "8e711f5b8aa4aec6914e8137236907da3460a02041cc894623c76cfb678f3949"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2020/2020-05-07-PAPER-Federated Learning in Mobile Edge Networks A Comprehensive Survey.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "79c20946d8d21eac0af71c65406df854e1d92f3326d23996e8bc6a0475bedbab",
+      "after_sha256": "54645eab245ba7b2f80851a53c66fac92a8828f386579c683ec577f97d47a7d1"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2020/2020-05-14-PAPER-Hadamard Response.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "cecf23abca08ac22930449d106b3c3d1e416809c6ccfb83bacb04dbfee3665cc",
+      "after_sha256": "57684cb19fa6f70cf46068350046c563f9dc479461c4264923b0d1c36be0c6a9"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2020/2020-06-15-PAPER-TGM.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "17166d5c47badcba744efcdef682360199f3f1a8486bdfee7ac496eaac580c76",
+      "after_sha256": "ccb6b7a5b6776a998fc1763aa63aaee6b4aac5112723f857e842328b273cf158"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2021/2021-09-13-技术扫盲-Private Set Integration.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "fff456b84880118b5c7235f310f7bd38da6f0192b62569be76aa278f060360c6",
+      "after_sha256": "dcbdf05ed7d1460fe553b2af85e8e7cd3857f95b7019a239af21130622e9b7a5"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2021/2021-09-19-PAPER-Federated Learning of Deep Networks using Model Averaging.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "19a72159022a7111b74c7a020673ab876ed61208c55201b215cadc6688389051",
+      "after_sha256": "e3ea8d3da1f461cc53e0496c698d11a6ce9c07507e43e714136616adf3e6038d"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2021/2021-10-12-技术扫盲-一文带你读懂纵向联邦学习的线性回归问题.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "c5b3b9df2e60801ed70532120d5fc2bf8dd4d09d2f611d1c08473116fab6a046",
+      "after_sha256": "0354a73b117819a6bae7e7bb0856cf4c0b4c47ba7a405be1230fdc1754443eff"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2021/2021-11-02-PAPER-How to Backdoor Federated Learning.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "bd838bda829db9b4a3c4c8f8aac8b514909c3faa9c62609b18f5fc128df632b1",
+      "after_sha256": "f250aff5582201e78cc13cb466e8c846c9dbb491f8706dc5a7a77fdbdb0a2271"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2021/2021-11-20-技术扫盲-OT-ForestNeo.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "abb20cc4648bc4a78db33003f1829ea2615228572bea2871728b53ab11c0f86b",
+      "after_sha256": "f63c5d173f89fd56ba30ced55b90503d736f0ee578ccb9d99da8733d6dd8a037"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2021/2021-11-20-技术扫盲-OT.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "f2a592d7f0a75f40a592b129609f009e7ce781cccec3948991fd4b54f784b561",
+      "after_sha256": "29b5f56459d842a1e914a393e430b665468fa79dda92e565ee48475e40d617c3"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2021/2021-11-29-技术扫盲-树模型.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "1dc7d3b28da97338c35f395352975e8d9468ec8f86f9f2019edddb7be3ba56dd",
+      "after_sha256": "fc393260022daf0591bc8aad23589ca66476c709d6c9f460d78f2a200f169773"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2021/2021-12-06-PAPER-Practical Secure Aggregation for Privacy-Preserving Machine Learning.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "0b9f800f06ea36198c3858695066e274e6add8a3c380ce49a4e4cfdb4ef514d0",
+      "after_sha256": "c6a7805d6db1a3b1252b68a92bb1d73d828019b91815f0b7da86c31e76625ff2"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2022/2022-01-11-PAPER-SecureBoost.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "5de0b1496b1429eb8a3356c8ea46d13f0b3fb8d635389ce95dc746147d209ba7",
+      "after_sha256": "9db1e693efce15c60f0a502962ae2e0d2a719f4b041ef2a921719ea7c34d6fe0"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2022/2022-01-27-PAPER-Towards Practical Differential Privacy for SQL Queries.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "14e20e67b5eb45721ce9ee39071d61788cddc0c253994582e067d25a3f31ae3b",
+      "after_sha256": "3dadf82bf8119a80f0b5e25cc38c478fca4f35d6c3250028916c6452b5b99bb7"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2022/2022-02-05-技术扫盲-DP在企业的应用.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "6a5934628e3c646d68a6d96e9da708f28df1d4cee89a87cd92ed0416626b662f",
+      "after_sha256": "ecc7c5a7d4acd62155d6ae637734686c3b6b8643bdef2b31b646ba944c30a735"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2022/2022-02-18-技术扫盲-DP美国人口普查局采用DP的原因.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "b566314c6956a2dfd0e3db92ed578a4ab5eb0b34ab407008dca0358104568b47",
+      "after_sha256": "ab14288986ee5b6aa7dc066be016463ac9bd935d2ba94af8213aebf051765fc5"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2022/2022-07-12-PAPER-Differentially Private Federated Learning A Client Level Perspective.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "5cb0e1d36038fdc7e073776dce061596287bcccf66042d5c02a82ca0fa7c75a5",
+      "after_sha256": "d1c850daf268bced3f8372c2277db81a7f4bd77d77e79a730f752b8926b08799"
+    },
+    {
+      "file": "content/posts/ForestNeo-markdown/articles/2023/2023-04-24-PAPER-Federated Learning with Differential Privacy.md",
+      "kind": "separator_and_promotion",
+      "before_sha256": "29592401e884f9b84adb6275be6a68f999ef3f80bc5ed9dcdb13979ad7e6129a",
+      "after_sha256": "6911547a7c1dc4d3b941876f9ad200d41d3398f35a7ec3c7abf0581df5943df9"
+    }
+  ],
+  "regeneration_respects_cleanup": true,
+  "regenerated_articles_match": 87,
+  "hugo_build": "passed",
+  "local_preview_status": 200,
+  "local_preview_cleaned_articles_checked": 45
+}

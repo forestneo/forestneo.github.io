@@ -32,7 +32,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.128.0
+      # Match the validated local version (passthrough render hooks for TeX).
+      HUGO_VERSION: 0.147.9
     steps:
       - name: Install Hugo CLI
         run: |

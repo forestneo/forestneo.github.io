@@ -1,0 +1,8 @@
+{{- $inner := .Inner -}}
+{{- if eq .Type "block" -}}
+  {{- /* Goldmark retains Markdown quote prefixes inside multiline TeX. */ -}}
+  {{- $inner = replaceRE `(?m)^[\t ]*(>[\t ]*)+` "" $inner -}}
+  <div class="math-display">\[{{ $inner }}\]</div>
+{{- else -}}
+  \({{ $inner }}\)
+{{- end -}}
